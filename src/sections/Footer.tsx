@@ -74,7 +74,7 @@ export function Footer() {
                 <p>Schildergasse 69-73</p>
                 <p>50667 Köln</p>
                 <p className="pt-2">+49 1578 879 4109</p>
-                <p>joris.vanbohemen@gmail.com</p>
+                <p>info@jorisvanbohemen.de</p>
               </div>
             </div>
 
