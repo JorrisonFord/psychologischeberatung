@@ -144,7 +144,7 @@ export const de = {
   },
 
   footer: {
-    copyright: "© 2026 Psychologische Beratung. Alle Rechte vorbehalten.",
+    copyright: "© 2026 Joris van Bohemen. Alle Rechte vorbehalten.",
     privacy: "Datenschutz",
     imprint: "Impressum",
   },
