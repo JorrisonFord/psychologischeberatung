@@ -138,7 +138,7 @@ export const de = {
     details: {
       address: "Schildergasse 69-73\n50667 Köln",
       phone: "+49 1578 879 4109",
-      email: "joris.vanbohemen@gmail.com",
+      email: "info@jorisvanbohemen.de",
       hours: "Mo–Fr: 9:00 – 18:00 Uhr",
     },
   },
