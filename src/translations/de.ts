@@ -53,7 +53,7 @@ export const de = {
       yoga: {
         title: "Achtsamkeit & Körperarbeit",
         description:
-          "Durch Achtsamkeit, Atemarbeit und sanfte Körperübungen stärken Sie die Fähigkeit, innere Prozesse bewusster wahrzunehmen und Stress besser zu regulieren.",
+          "Durch Achtsamkeit, Atemarbeit und sanfte Körperübungen stärken Sie die Fähigkeit, innere Prozesse bewusster wahrzunehmen und Stress besser zu regulieren.\n",
         features: ["Achtsamkeitspraxis", "Atemarbeit", "Emotionsregulation"],
       },
 
