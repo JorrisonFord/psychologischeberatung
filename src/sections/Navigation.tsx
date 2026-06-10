@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Menu, X } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export function Navigation() {
   const { t, language, toggleLanguage } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,15 +23,24 @@ export function Navigation() {
     { label: t.nav.services, href: '#services' },
     { label: t.nav.philosophy, href: '#philosophy' },
     { label: t.nav.testimonials, href: '#testimonials' },
+    { label: 'Blog', href: '/blog', isRoute: true },
     { label: t.nav.contact, href: '#contact' },
   ];
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
+  const handleNavClick = (item: any) => {
+    setIsMobileMenuOpen(false);
+
+    // ROUTE (Blog)
+    if (item.isRoute) {
+      navigate(item.href);
+      return;
+    }
+
+    // SCROLL SECTIONS
+    const element = document.querySelector(item.href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -44,7 +55,7 @@ export function Navigation() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between">
 
-            {/* Brand */}
+            {/* BRAND */}
             <a
               href="#"
               onClick={(e) => {
@@ -53,23 +64,20 @@ export function Navigation() {
               }}
               className="flex flex-col leading-tight hover:text-[#B5725A] transition-colors"
             >
-              {/* Name */}
               <span className="font-serif text-lg md:text-xl text-[#3D3229] tracking-tight">
                 Joris van Bohemen
               </span>
-
-              {/* Subline */}
               <span className="text-[11px] md:text-xs text-[#3D3229]/50 tracking-wide mt-0.5">
                 ACT-basierte psychologische Beratung
               </span>
             </a>
 
-            {/* Desktop Navigation */}
+            {/* DESKTOP NAV */}
             <div className="hidden lg:flex items-center gap-8">
               {navItems.map((item) => (
                 <button
                   key={item.href}
-                  onClick={() => scrollToSection(item.href)}
+                  onClick={() => handleNavClick(item)}
                   className="text-sm font-medium text-[#3D3229]/80 hover:text-[#B5725A] transition-colors relative group"
                 >
                   {item.label}
@@ -77,7 +85,7 @@ export function Navigation() {
                 </button>
               ))}
 
-              {/* Language Toggle */}
+              {/* LANGUAGE */}
               <button
                 onClick={toggleLanguage}
                 className="flex items-center gap-1 text-sm font-medium text-[#3D3229]/80 hover:text-[#B5725A] transition-colors border border-[#3D3229]/20 rounded-full px-3 py-1 hover:border-[#B5725A]"
@@ -88,7 +96,7 @@ export function Navigation() {
               </button>
             </div>
 
-            {/* Mobile */}
+            {/* MOBILE */}
             <div className="flex items-center gap-4 lg:hidden">
               <button
                 onClick={toggleLanguage}
@@ -112,7 +120,7 @@ export function Navigation() {
         </div>
       </nav>
 
-      {/* Mobile Menu */}
+      {/* MOBILE MENU */}
       <div
         className={`fixed inset-0 z-40 lg:hidden transition-all duration-500 ${
           isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
@@ -132,7 +140,7 @@ export function Navigation() {
             {navItems.map((item) => (
               <button
                 key={item.href}
-                onClick={() => scrollToSection(item.href)}
+                onClick={() => handleNavClick(item)}
                 className="text-left text-lg font-medium text-[#3D3229] hover:text-[#B5725A] transition-colors py-2 border-b border-[#3D3229]/10 last:border-0"
               >
                 {item.label}
