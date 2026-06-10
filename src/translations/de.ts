@@ -68,7 +68,7 @@ export const de = {
 
   philosophy: {
     subtitle: "Arbeitsweise",
-    title: "Ein ACT-basierter und achtsamer Ansatz in der psychologischen Beratung",
+    title: "Ein ACT-basierter und achtsamer Ansatz",
     pillars: {
       empathy: {
         title: "Empathie",
