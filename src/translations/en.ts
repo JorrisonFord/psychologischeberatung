@@ -1,0 +1,161 @@
+export const en = {
+  nav: {
+    about: "About",
+    services: "Services",
+    philosophy: "Approach",
+    testimonials: "Experiences",
+    contact: "Contact",
+  },
+
+  hero: {
+    subtitle: "ACT-based psychological counseling",
+    title: "A space for clarity, calm, and inner alignment",
+    description:
+      "I support you in a safe and respectful setting in developing a more conscious relationship with thoughts and emotions and in shaping a life guided by your personal values. The focus is psychological flexibility rather than pressure to change.",
+    ctaPrimary: "Book a session",
+    ctaSecondary: "Learn more",
+  },
+
+  about: {
+    subtitle: "About me",
+    title: "Your companion for psychological development and personal clarity",
+    paragraph1:
+      "I am a Master’s-level psychologist specializing in neuropsychology, working integratively with psychological counseling, mindfulness, and Acceptance and Commitment Therapy (ACT). My focus is on fostering psychological flexibility and a conscious relationship with inner processes.",
+
+    paragraph2:
+      "In addition, I bring long-standing experience in yoga and body-based work as well as training in experiential education. This allows for an integrative approach that connects body, emotion, and cognition.",
+
+    paragraph3:
+      "It is important to me to meet you in a calm and reliable setting where genuine openness can emerge.",
+
+    credentials: {
+      title: "Qualifications",
+      items: [
+        "M.Sc. Psychology (Neuropsychology specialization)",
+        "Training in Acceptance and Commitment Therapy (ACT)",
+        "Experienced yoga and mindfulness practitioner",
+        "Training in experiential education",
+      ],
+    },
+  },
+
+  services: {
+    subtitle: "Services",
+    title: "My focus areas",
+    items: {
+      counseling: {
+        title: "Psychological Counseling",
+        description:
+          "In a safe and confidential setting, I support you in navigating life crises, anxiety, and emotionally challenging situations. Together we develop new perspectives and concrete ways forward.",
+        features: [
+          "Confidential space",
+          "Individual counseling",
+          "Clarity & orientation",
+        ],
+      },
+
+      yoga: {
+        title: "Mindfulness & Body Work",
+        description:
+          "Through mindfulness, breathwork, and gentle body-based exercises, you strengthen your ability to notice inner processes and regulate stress more effectively.",
+        features: ["Mindfulness practice", "Breathwork", "Emotion regulation"],
+      },
+
+      act: {
+        title: "ACT & Values Work",
+        description:
+          "Acceptance and Commitment Therapy (ACT) supports you in relating to thoughts and emotions without being controlled by them, and in building a life guided by your personal values.",
+        features: [
+          "Acceptance over avoidance",
+          "Values-based living",
+          "Psychological flexibility",
+        ],
+      },
+    },
+  },
+
+  philosophy: {
+    subtitle: "My approach",
+    title: "An ACT-based and mindful framework for psychological counseling",
+    pillars: {
+      empathy: {
+        title: "Empathy",
+        description:
+          "I meet you with openness and genuine interest in your individual situation. In a space of acceptance, everything you bring is welcome.",
+      },
+      safety: {
+        title: "Safety",
+        description:
+          "Confidentiality and a protected framework form the foundation of our work together. Here you can open up without fear of judgment.",
+      },
+      wholeness: {
+        title: "Wholeness",
+        description:
+          "Body, thoughts, and emotions are constantly interacting and shaping our experience and behavior. My approach integrates these dimensions into a coherent understanding of development.",
+      },
+    },
+  },
+
+  testimonials: {
+    subtitle: "Experiences",
+    title: "What has changed through the process",
+    items: [
+      {
+        quote:
+          "I learned to no longer treat my thoughts as absolute truth. This helps me respond more calmly and make more conscious decisions.",
+        author: "Client, 30",
+        context: "ACT & mindfulness",
+      },
+      {
+        quote:
+          "I stopped constantly fighting my inner restlessness. This alone has significantly reduced pressure in my daily life.",
+        author: "Client, 40",
+        context: "Psychological counseling",
+      },
+      {
+        quote:
+          "The combination of conversation and body-based work helps me reconnect with myself and understand more clearly what truly matters to me.",
+        author: "Client, 28",
+        context: "Mindfulness & values work",
+      },
+    ],
+  },
+
+  contact: {
+    subtitle: "Contact",
+    title: "Get in touch",
+    description:
+      "I look forward to hearing from you. You are welcome to schedule a non-binding initial consultation.",
+    form: {
+      name: "Your name",
+      email: "Email address",
+      phone: "Phone (optional)",
+      message: "Your message",
+      submit: "Send message",
+      success: "Thank you! I will get back to you.",
+    },
+    info: {
+      address: "Practice address",
+      phone: "Phone",
+      email: "Email",
+      hours: "Office hours",
+    },
+    details: {
+      address: "Schildergasse 69-73\n50667 Cologne",
+      phone: "+49 1578 879 4109",
+      email: "joris.vanbohemen@gmail.com",
+      hours: "Mon–Fri: 9:00 AM – 6:00 PM",
+    },
+  },
+
+  footer: {
+    copyright: "© 2026 Psychological Counseling. All rights reserved.",
+    privacy: "Privacy Policy",
+    imprint: "Legal Notice",
+  },
+
+  language: {
+    de: "DE",
+    en: "EN",
+  },
+};
