@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import {MessageCircle, Sun, Navigation} from 'lucide-react';
+import { MessageCircle, Sun, Navigation } from 'lucide-react';
 
 export function Services() {
   const { t } = useLanguage();
@@ -85,7 +85,7 @@ export function Services() {
             return (
               <div
                 key={service.key}
-                className={`group relative flex flex-col bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift ${
+                className={`group relative flex flex-col bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-[#3D3229]/10 transition-all duration-500 hover:-translate-y-1 hover:border-[#B5725A]/20 ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
                 }`}
                 style={{ transitionDelay: `${200 + index * 150}ms` }}
@@ -98,11 +98,11 @@ export function Services() {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#3D3229]/40 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#3D3229]/30 via-transparent to-transparent" />
 
                   {/* Icon badge */}
-                  <div className="absolute bottom-4 left-4 w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-lg">
-                    <Icon className="text-[#B5725A]" size={28} />
+                  <div className="absolute bottom-4 left-4 w-14 h-14 bg-white/90 backdrop-blur-sm rounded-2xl flex items-center justify-center shadow-sm">
+                    <Icon className="text-[#B5725A]" size={26} />
                   </div>
                 </div>
 
@@ -112,26 +112,13 @@ export function Services() {
                     {serviceData.title}
                   </h3>
 
-                  <p className="text-[#3D3229]/70 leading-relaxed mb-6">
+                  <p className="text-[#3D3229]/70 leading-relaxed">
                     {serviceData.description}
                   </p>
-
-                  {/* Features */}
-                  <ul className="mt-auto space-y-2">
-                    {serviceData.features.map((feature, featureIndex) => (
-                      <li
-                        key={featureIndex}
-                        className="flex items-center gap-2 text-sm text-[#3D3229]/60"
-                      >
-                        <span className="w-1.5 h-1.5 bg-[#7A8B6E] rounded-full" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
                 </div>
 
-                {/* Hover border effect */}
-                <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#B5725A]/20 rounded-3xl transition-colors duration-300 pointer-events-none" />
+                {/* subtle hover line (very minimal structure cue) */}
+                <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#B5725A]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
             );
           })}

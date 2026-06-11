@@ -18,9 +18,9 @@ export const de = {
 
   about: {
     subtitle: "Über mich",
-    title: "Psychologische Beratung auf Basis von ACT",
+    title: "Psychologische Beratung (ACT)",
     paragraph1:
-    "Ich bin Master-Psychologe mit Schwerpunkt Neuropsychologie und arbeite integrativ mit psychologischer Beratung und Acceptance & Commitment Therapy (ACT). Im Mittelpunkt stehen Akzeptanz innerer Prozesse, psychische Flexibilität und eine werteorientierte Lebensführung.",
+    "Ich bin Master-Psychologe mit Schwerpunkt Neuropsychologie und arbeite in meiner psychologischen Beratung auf Basis der Acceptance & Commitment Therapy (ACT). Im Mittelpunkt stehen Akzeptanz innerer Prozesse, psychische Flexibilität und eine werteorientierte Lebensführung.",
     paragraph2:
     "Ergänzend bringe ich langjährige Erfahrung in Yoga und Körperarbeit sowie eine erlebnispädagogische Ausbildung in meine Arbeit ein. Dadurch entsteht ein ganzheitlicher Zugang, der Körper, Gefühle und Denken miteinander verbindet.",
     credentials: {
@@ -35,31 +35,28 @@ export const de = {
   },
 
   services: {
-    subtitle: "Angebot",
-    title: "Meine Schwerpunkte",
-    items: {
-      counseling: {
-        title: "Psychologische Beratung",
-        description:
-          "Ich begleite Sie bei persönlichen Krisen, Ängsten und herausfordernden Lebenssituationen. Gemeinsam entwickeln wir neue Perspektiven und konkrete Handlungsmöglichkeiten.",
-        features: ["Neue Perspektiven", "Individuelle Beratung", "Klarheit & Orientierung"],
-      },
+  subtitle: "Angebot",
+  title: "Meine Schwerpunkte",
+  items: {
+    counseling: {
+      title: "Psychologische Beratung",
+      description:
+        "Ich begleite Sie bei persönlichen Krisen, Ängsten und herausfordernden Lebenssituationen. Gemeinsam entwickeln wir neue Perspektiven im Umgang mit Gedanken und Gefühlen sowie konkrete Handlungsmöglichkeiten.",
+    },
 
-      yoga: {
-        title: "Achtsamkeit & Körperarbeit",
-        description:
-          "Auf Grundlage meiner langjährigen Yoga-Erfahrung verbinde ich Achtsamkeit, Atemarbeit und sanfte Körperübungen. So stärken Sie die Fähigkeit, innere Prozesse bewusster wahrzunehmen und Stress besser zu regulieren.",
-        features: ["Yoga & Achtsamkeit", "Atemarbeit", "Gefühlsregulation"],
-      },
+    yoga: {
+      title: "Yoga & Achtsamkeit",
+      description:
+        "Ich unterstütze Sie dabei, über einfache Atem- und Körperübungen wieder mehr in Kontakt mit sich selbst zu kommen. Dadurch können Sie innere Prozesse bewusster wahrnehmen und Stress besser regulieren.",
+    },
 
-      act: {
-        title: "ACT & Wertearbeit",
-        description:
-          "Acceptance and Commitment Therapy (ACT) unterstützt Sie dabei, Gedanken und Gefühle anzunehmen, ohne von ihnen gesteuert zu werden, und ein Leben zu gestalten, das sich an Ihren persönlichen Werten orientiert.",
-        features: ["Akzeptanz statt Vermeidung", "Werteorientierung", "Psychische Flexibilität"],
-      },
+    act: {
+      title: "ACT & Wertearbeit",
+      description:
+        "Acceptance and Commitment Therapy (ACT) unterstützt Sie dabei, Gedanken und Gefühle anzunehmen, ohne von ihnen gesteuert zu werden. Dadurch entsteht mehr psychische Flexibilität und die Möglichkeit, das eigene Leben an persönlichen Werten auszurichten.",
     },
   },
+},
 
   philosophy: {
     subtitle: "Arbeitsweise",
