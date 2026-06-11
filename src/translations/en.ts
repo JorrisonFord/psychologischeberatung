@@ -23,7 +23,7 @@ export const en = {
       "I am a Master's-level psychologist specializing in neuropsychology and work in psychological counseling based on Acceptance and Commitment Therapy (ACT). My focus is on acceptance of inner experiences, psychological flexibility, and value-oriented living.",
 
     paragraph2:
-      "In addition, I bring long-standing experience in yoga and body-based work as well as training in experiential education. This allows for an integrative approach that connects body, emotions, and cognition.",
+      "In addition, I bring long-standing experience in yoga and mindfulness as well as training in experiential education. This allows for an integrative approach that connects body, emotions, and cognition.",
 
     credentials: {
       title: "Qualifications",
