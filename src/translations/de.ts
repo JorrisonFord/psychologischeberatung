@@ -12,7 +12,7 @@ export const de = {
   title: "Ein Raum für Ruhe und innere Ausrichtung",
   description:
     "Ich unterstütze Sie dabei, einen bewussteren Umgang mit Gedanken und Gefühlen zu entwickeln. Dadurch entsteht mehr innere Freiheit und die Möglichkeit, das eigene Leben an dem auszurichten, was Ihnen wirklich wichtig ist.",
-  ctaPrimary: "Termin vereinbaren",
+  ctaPrimary: "Gespräch vereinbaren",
   ctaSecondary: "Mehr erfahren",
 },
 
