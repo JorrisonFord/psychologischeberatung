@@ -7,6 +7,7 @@ export function Navigation() {
   const { t, language, toggleLanguage } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -20,9 +21,7 @@ export function Navigation() {
   }, []);
 
   useEffect(() => {
-    if (location.pathname !== '/' || !location.hash) {
-      return;
-    }
+    if (location.pathname !== '/' || !location.hash) return;
 
     const element = document.querySelector(location.hash);
     if (element) {
@@ -37,19 +36,30 @@ export function Navigation() {
     { label: t.nav.services, href: '#services' },
     { label: t.nav.philosophy, href: '#philosophy' },
     { label: 'Blog', href: '/blog', isRoute: true },
+    {
+      label: 'Podcast',
+      href: 'https://open.spotify.com/show/4wRbB36LtZ2dMtHDn4Z3LL?si=7a0bca36997c4fa5',
+      isExternal: true,
+    },
     { label: t.nav.contact, href: '#contact' },
   ];
 
   const handleNavClick = (item: any) => {
     setIsMobileMenuOpen(false);
 
-    // ROUTE (Blog)
+    // EXTERNAL LINKS (Podcast)
+    if (item.isExternal) {
+      window.open(item.href, '_blank', 'noopener,noreferrer');
+      return;
+    }
+
+    // ROUTES (Blog)
     if (item.isRoute) {
       navigate(item.href);
       return;
     }
 
-    // SCROLL SECTIONS
+    // SECTIONS (scroll)
     if (location.pathname !== '/') {
       navigate(`/${item.href}`);
       return;
@@ -78,6 +88,7 @@ export function Navigation() {
               href="#"
               onClick={(e) => {
                 e.preventDefault();
+
                 if (location.pathname !== '/') {
                   navigate('/');
                   return;
@@ -108,7 +119,7 @@ export function Navigation() {
                 </button>
               ))}
 
-              {/* LANGUAGE */}
+              {/* LANGUAGE SWITCH */}
               <button
                 onClick={toggleLanguage}
                 className="flex items-center gap-1 text-sm font-medium text-[#3D3229]/80 hover:text-[#B5725A] transition-colors border border-[#3D3229]/20 rounded-full px-3 py-1 hover:border-[#B5725A]"
