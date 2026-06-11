@@ -11,16 +11,16 @@ export const en = {
     subtitle: "ACT-based psychological counseling",
     title: "A space for clarity, calm, and inner alignment",
     description:
-      "I support you in a safe and respectful setting in developing a more conscious relationship with thoughts and emotions and in shaping a life guided by your personal values. The focus is psychological flexibility rather than pressure to change.",
+      "In my psychological counseling, I support you in developing a more conscious relationship with your thoughts and emotions and in shaping a life guided by your personal values. The focus is not on pressure to change, but on developing psychological flexibility and creating more space for what truly matters to you.",
     ctaPrimary: "Book a session",
     ctaSecondary: "Learn more",
   },
 
   about: {
     subtitle: "About me",
-    title: "Your companion for psychological development and personal clarity",
+    title: "Psychological counseling for personal development and clarity",
     paragraph1:
-      "I am a Master’s-level psychologist specializing in neuropsychology, working integratively with psychological counseling, mindfulness, and Acceptance and Commitment Therapy (ACT). My focus is on fostering psychological flexibility and a conscious relationship with inner processes.",
+      "I am a Master’s-level psychologist specializing in neuropsychology and work integratively with psychological counseling and Acceptance and Commitment Therapy (ACT). The focus of my work is fostering psychological flexibility and a conscious relationship with inner processes.",
 
     paragraph2:
       "In addition, I bring long-standing experience in yoga and body-based work as well as training in experiential education. This allows for an integrative approach that connects body, emotion, and cognition.",
@@ -47,11 +47,7 @@ export const en = {
         title: "Psychological Counseling",
         description:
           "In a safe and confidential setting, I support you in navigating life crises, anxiety, and emotionally challenging situations. Together we develop new perspectives and concrete ways forward.",
-        features: [
-          "Confidential space",
-          "Individual counseling",
-          "Clarity & orientation",
-        ],
+        features: ["New perspectives", "Individual counseling", "Clarity & orientation"],
       },
 
       yoga: {
@@ -76,12 +72,12 @@ export const en = {
 
   philosophy: {
     subtitle: "My approach",
-    title: "An ACT-based and mindful framework for psychological counseling",
+    title: "An ACT-based and mindful approach",
     pillars: {
       empathy: {
         title: "Empathy",
         description:
-          "I meet you with openness and genuine interest in your individual situation. In a space of acceptance, everything you bring is welcome.",
+          "I meet you with openness and attentiveness to your individual life situation. In a space of acceptance, everything you bring is welcome.",
       },
       safety: {
         title: "Safety",
@@ -91,7 +87,7 @@ export const en = {
       wholeness: {
         title: "Wholeness",
         description:
-          "Body, thoughts, and emotions are constantly interacting and shaping our experience and behavior. My approach integrates these dimensions into a coherent understanding of development.",
+          "Body, thoughts, and emotions are in constant interaction and shape the way we experience life. My approach integrates these dimensions into a coherent overall picture.",
       },
     },
   },
@@ -143,13 +139,13 @@ export const en = {
     details: {
       address: "Schildergasse 69-73\n50667 Cologne",
       phone: "+49 1578 879 4109",
-      email: "joris.vanbohemen@gmail.com",
+      email: "info@jorisvanbohemen.de",
       hours: "Mon–Fri: 9:00 AM – 6:00 PM",
     },
   },
 
   footer: {
-    copyright: "© 2026 Psychological Counseling. All rights reserved.",
+    copyright: "© 2026 Joris van Bohemen. All rights reserved.",
     privacy: "Privacy Policy",
     imprint: "Legal Notice",
   },

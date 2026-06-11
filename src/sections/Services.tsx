@@ -108,7 +108,7 @@ export function Services() {
                   <h3 className="font-serif text-2xl text-[#3D3229] mb-4 group-hover:text-[#B5725A] transition-colors">
                     {serviceData.title}
                   </h3>
-                  <p className="text-[#3D3229]/70 leading-relaxed mb-6">
+                  <p className="text-[#3D3229]/70 leading-relaxed mb-6 md:min-h-[9rem]">
                     {serviceData.description}
                   </p>
 

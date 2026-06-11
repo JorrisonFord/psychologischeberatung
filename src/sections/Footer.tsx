@@ -46,7 +46,7 @@ export function Footer() {
               </a>
 
               <p className="text-white/60 leading-relaxed max-w-sm">
-                ACT-basierte psychologische Beratung für mehr innere Klarheit, psychologische Flexibilität und persönliche Entwicklung.
+                ACT-basierte psychologische Beratung für mehr innere Klarheit, psychische Flexibilität und persönliche Entwicklung.
               </p>
             </div>
 

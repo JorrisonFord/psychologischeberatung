@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export function BlogIndex() {
   const posts = [
     {
-      title: "Psychologische Flexibilität verstehen",
+      title: "Psychische Flexibilität verstehen",
       description:
         "Ein zentraler Begriff der ACT und Grundlage für einen flexibleren Umgang mit Gedanken und Gefühlen.",
       slug: "/blog/psychologische-flexibilitaet",
@@ -30,7 +30,7 @@ export function BlogIndex() {
           </h1>
 
           <p className="text-lg text-[#3D3229]/70 max-w-2xl">
-            Gedanken zu psychologischer Flexibilität, ACT und innerer Entwicklung.
+            Gedanken zu psychischer Flexibilität, ACT und innerer Entwicklung.
             Impulse aus der Praxis und psychologischen Arbeit.
           </p>
         </header>
@@ -39,7 +39,7 @@ export function BlogIndex() {
         <div className="mb-12 p-6 rounded-2xl bg-white shadow-sm border border-[#3D3229]/5">
           <p className="text-sm text-[#B5725A] mb-2">Featured</p>
           <h2 className="text-2xl font-serif mb-2">
-            Psychologische Flexibilität verstehen
+            Psychische Flexibilität verstehen
           </h2>
           <p className="text-[#3D3229]/70 mb-4">
             Ein zentraler Begriff der ACT und Grundlage für Veränderung ohne inneren Druck.

@@ -8,15 +8,15 @@ export function BlogArticleTemplate() {
       <header className="max-w-3xl mx-auto px-6 pt-28 pb-12">
         
         <div className="text-sm text-[#B5725A] uppercase tracking-wide mb-4">
-          ACT • Psychologische Flexibilität
+          ACT • Psychische Flexibilität
         </div>
 
         <h1 className="font-serif text-4xl md:text-5xl leading-tight mb-6">
-          Psychologische Flexibilität verstehen
+          Psychische Flexibilität verstehen
         </h1>
 
         <p className="text-lg text-[#3D3229]/70 leading-relaxed">
-          Psychologische Flexibilität beschreibt die Fähigkeit, Gedanken und Gefühle wahrzunehmen,
+          Psychische Flexibilität beschreibt die Fähigkeit, Gedanken und Gefühle wahrzunehmen,
           ohne von ihnen gesteuert zu werden – und dennoch handlungsfähig zu bleiben.
         </p>
 
@@ -41,7 +41,7 @@ export function BlogArticleTemplate() {
 
         <section>
           <h2 className="text-2xl font-serif mb-3">
-            Was bedeutet psychologische Flexibilität?
+            Was bedeutet psychische Flexibilität?
           </h2>
           <p className="text-[#3D3229]/80 leading-relaxed">
             In der Acceptance and Commitment Therapy (ACT) beschreibt dieser Begriff
@@ -64,7 +64,7 @@ export function BlogArticleTemplate() {
             Kurz zusammengefasst
           </h3>
           <p className="text-[#3D3229]/80">
-            Psychologische Flexibilität bedeutet, inneres Erleben wahrzunehmen,
+            Psychische Flexibilität bedeutet, inneres Erleben wahrzunehmen,
             ohne sich davon bestimmen zu lassen – und trotzdem entsprechend der eigenen Werte zu handeln.
           </p>
         </section>

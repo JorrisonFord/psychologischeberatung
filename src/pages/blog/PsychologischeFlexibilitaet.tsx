@@ -12,7 +12,7 @@ export function PsychologischeFlexibilitaet() {
         {/* HERO / TITLE */}
         <header className="mb-12">
           <h1 className="font-serif text-4xl md:text-5xl leading-tight mb-4">
-            Psychologische Flexibilität – was bedeutet das eigentlich?
+            Psychische Flexibilität – was bedeutet das eigentlich?
           </h1>
 
           <p className="text-lg text-[#3D3229]/70">
@@ -30,7 +30,7 @@ export function PsychologischeFlexibilitaet() {
           </p>
 
           <p>
-            Psychologische Flexibilität beschreibt die Fähigkeit, genau in solchen
+            Psychische Flexibilität beschreibt die Fähigkeit, genau in solchen
             Momenten handlungsfähig zu bleiben – ohne den inneren Kampf gegen das
             eigene Erleben.
           </p>
@@ -40,7 +40,7 @@ export function PsychologischeFlexibilitaet() {
           </p>
 
           <h2 className="font-serif text-2xl mt-10 mb-4">
-            Was bedeutet psychologische Flexibilität konkret?
+            Was bedeutet psychische Flexibilität konkret?
           </h2>
 
           <ul className="list-disc pl-6 space-y-2">
@@ -75,7 +75,7 @@ export function PsychologischeFlexibilitaet() {
           </p>
 
           <p>
-            Psychologische Flexibilität ermöglicht einen anderen Umgang:
+            Psychische Flexibilität ermöglicht einen anderen Umgang:
             nicht Kontrolle, sondern Kontakt.
           </p>
 
@@ -84,7 +84,7 @@ export function PsychologischeFlexibilitaet() {
           </h2>
 
           <p>
-            In der ACT steht psychologische Flexibilität im Zentrum der Arbeit.
+            In der ACT steht psychische Flexibilität im Zentrum der Arbeit.
           </p>
 
           <p>Dazu gehören unter anderem:</p>
@@ -102,7 +102,7 @@ export function PsychologischeFlexibilitaet() {
           </h2>
 
           <p>
-            Psychologische Flexibilität bedeutet, nicht gegen das eigene innere
+            Psychische Flexibilität bedeutet, nicht gegen das eigene innere
             Erleben zu kämpfen, sondern einen bewussten Umgang damit zu entwickeln.
           </p>
 

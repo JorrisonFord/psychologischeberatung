@@ -11,7 +11,7 @@ export const de = {
     subtitle: "ACT-basierte psychologische Beratung",
     title: "Ein Raum für Klarheit, Ruhe und innere Ausrichtung",
     description:
-      "In meiner psychologischen Beratung unterstütze ich Sie dabei, einen bewussteren Umgang mit Gedanken und Gefühlen zu entwickeln und ein Leben zu gestalten, das sich an Ihren persönlichen Werten orientiert. Es geht nicht um Veränderungsdruck, sondern um die Entwicklung psychologischer Flexibilität und mehr Raum für das, was Ihnen wirklich wichtig ist.",
+      "In meiner psychologischen Beratung unterstütze ich Sie dabei, einen bewussteren Umgang mit Gedanken und Gefühlen zu entwickeln und ein Leben zu gestalten, das sich an Ihren persönlichen Werten orientiert. Es geht nicht um Veränderungsdruck, sondern um die Entwicklung psychischer Flexibilität und mehr Raum für das, was Ihnen wirklich wichtig ist.",
     ctaPrimary: "Termin vereinbaren",
     ctaSecondary: "Mehr erfahren",
   },
@@ -20,7 +20,7 @@ export const de = {
     subtitle: "Über mich",
     title: "Psychologische Beratung für persönliche Entwicklung und Klarheit",
     paragraph1:
-      "Ich bin Master-Psychologe mit Schwerpunkt Neuropsychologie und arbeite integrativ mit psychologischer Beratung und Acceptance & Commitment Therapy (ACT). Im Mittelpunkt steht die Förderung psychologischer Flexibilität und ein bewusster Umgang mit inneren Prozessen.",
+      "Ich bin Master-Psychologe mit Schwerpunkt Neuropsychologie und arbeite integrativ mit psychologischer Beratung und Acceptance & Commitment Therapy (ACT). Im Mittelpunkt steht die Förderung psychischer Flexibilität und ein bewusster Umgang mit inneren Prozessen.",
 
     paragraph2:
       "Ergänzend bringe ich langjährige Erfahrung in Yoga und Körperarbeit sowie eine erlebnispädagogische Ausbildung in meine Arbeit ein. Dadurch entsteht ein ganzheitlicher Zugang, der Körper, Emotion und Denken miteinander verbindet.",
@@ -47,13 +47,13 @@ export const de = {
         title: "Psychologische Beratung",
         description:
           "In einem sicheren und vertraulichen Rahmen begleite ich Sie bei persönlichen Krisen, Ängsten und herausfordernden Lebenssituationen. Gemeinsam entwickeln wir neue Perspektiven und konkrete Handlungsmöglichkeiten.",
-        features: ["Vertraulicher Rahmen", "Individuelle Beratung", "Klarheit & Orientierung"],
+        features: ["Neue Perspektiven", "Individuelle Beratung", "Klarheit & Orientierung"],
       },
 
       yoga: {
         title: "Achtsamkeit & Körperarbeit",
         description:
-          "Durch Achtsamkeit, Atemarbeit und sanfte Körperübungen stärken Sie die Fähigkeit, innere Prozesse bewusster wahrzunehmen und Stress besser zu regulieren.\n",
+          "Durch Achtsamkeit, Atemarbeit und sanfte Körperübungen stärken Sie die Fähigkeit, innere Prozesse bewusster wahrzunehmen und Stress besser zu regulieren.",
         features: ["Achtsamkeitspraxis", "Atemarbeit", "Emotionsregulation"],
       },
 
@@ -61,7 +61,7 @@ export const de = {
         title: "ACT & Wertearbeit",
         description:
           "Acceptance and Commitment Therapy (ACT) unterstützt Sie dabei, Gedanken und Gefühle anzunehmen, ohne von ihnen gesteuert zu werden, und ein Leben zu gestalten, das sich an Ihren persönlichen Werten orientiert.",
-        features: ["Akzeptanz statt Vermeidung", "Werteorientierung", "Psychologische Flexibilität"],
+        features: ["Akzeptanz statt Vermeidung", "Werteorientierung", "Psychische Flexibilität"],
       },
     },
   },
@@ -73,7 +73,7 @@ export const de = {
       empathy: {
         title: "Empathie",
         description:
-          "Ich begegne Ihnen mit Offenheit und echtem Interesse für Ihre individuelle Lebenssituation. In einem Raum von Akzeptanz darf alles da sein, was Sie mitbringen.",
+          "Ich begegne Ihnen mit Offenheit und Aufmerksamkeit für Ihre individuelle Lebenssituation. In einem Raum von Akzeptanz darf alles da sein, was Sie mitbringen.",
       },
       safety: {
         title: "Sicherheit",
