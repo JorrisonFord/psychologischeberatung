@@ -11,14 +11,14 @@ export const de = {
   subtitle: "Psychologische Beratung (ACT)",
   title: "Ein Raum für Ruhe und innere Ausrichtung",
   description:
-    "In meiner psychologischen Beratung unterstütze ich Sie dabei, einen bewussteren Umgang mit Gedanken und Gefühlen zu entwickeln. Dadurch entsteht mehr innere Klarheit und die Möglichkeit, das eigene Leben an dem auszurichten, was Ihnen wirklich wichtig ist.",
+    "Ich unterstütze Sie dabei, einen bewussteren Umgang mit Gedanken und Gefühlen zu entwickeln. Dadurch entsteht mehr innere Freiheit und die Möglichkeit, das eigene Leben an dem auszurichten, was Ihnen wirklich wichtig ist.",
   ctaPrimary: "Termin vereinbaren",
   ctaSecondary: "Mehr erfahren",
 },
 
   about: {
-    subtitle: "Über mich",
-    title: "Psychologische Beratung (ACT)",
+    title: "Über mich",
+    subtitle: "",
     paragraph1:
     "Ich bin Master-Psychologe mit Schwerpunkt Neuropsychologie und arbeite in meiner psychologischen Beratung auf Basis der Acceptance & Commitment Therapy (ACT). Im Mittelpunkt stehen Akzeptanz innerer Prozesse, psychische Flexibilität und eine werteorientierte Lebensführung.",
     paragraph2:
@@ -35,13 +35,13 @@ export const de = {
   },
 
   services: {
-  subtitle: "Angebot",
-  title: "Meine Schwerpunkte",
+  title: "Angebot",
+  subtitle: "",
   items: {
     counseling: {
       title: "Psychologische Beratung",
       description:
-        "Ich begleite Sie bei persönlichen Krisen, Ängsten und herausfordernden Lebenssituationen. Gemeinsam entwickeln wir neue Perspektiven im Umgang mit Gedanken und Gefühlen sowie konkrete Handlungsmöglichkeiten.",
+        "Ich begleite Sie bei persönlichen Krisen, Ängsten und herausfordernden Lebenssituationen. Gemeinsam entwickeln wir konkrete Handlungsmöglichkeiten sowie neue Perspektiven im Umgang mit Gedanken und Gefühlen.",
     },
 
     yoga: {
