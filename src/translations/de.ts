@@ -20,7 +20,7 @@ export const de = {
     subtitle: "Über mich",
     title: "Psychologische Beratung für persönliche Entwicklung und Klarheit",
     paragraph1:
-      "Ich bin Master-Psychologe mit Schwerpunkt Neuropsychologie und arbeite integrativ mit psychologischer Beratungund Acceptance & Commitment Therapy (ACT). Im Mittelpunkt steht die Förderung psychologischer Flexibilität und ein bewusster Umgang mit inneren Prozessen.",
+      "Ich bin Master-Psychologe mit Schwerpunkt Neuropsychologie und arbeite integrativ mit psychologischer Beratung und Acceptance & Commitment Therapy (ACT). Im Mittelpunkt steht die Förderung psychologischer Flexibilität und ein bewusster Umgang mit inneren Prozessen.",
 
     paragraph2:
       "Ergänzend bringe ich langjährige Erfahrung in Yoga und Körperarbeit sowie eine erlebnispädagogische Ausbildung in meine Arbeit ein. Dadurch entsteht ein ganzheitlicher Zugang, der Körper, Emotion und Denken miteinander verbindet.",
