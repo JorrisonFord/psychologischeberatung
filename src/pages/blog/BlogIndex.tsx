@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { useLanguage } from "../../context/LanguageContext";
 
 export function BlogIndex() {
+  const { t } = useLanguage();
+
   const posts = [
     {
       title: "Psychische Flexibilität verstehen",
@@ -25,13 +28,17 @@ export function BlogIndex() {
 
         {/* HERO */}
         <header className="mb-16">
+          <p className="text-sm font-medium tracking-wider text-[#B5725A] uppercase mb-4">
+            {t.hero.subtitle}
+          </p>
+
           <h1 className="font-serif text-4xl md:text-5xl mb-4">
             Blog
           </h1>
 
           <p className="text-lg text-[#3D3229]/70 max-w-2xl">
-            Gedanken zu psychischer Flexibilität, ACT und innerer Entwicklung.
-            Impulse aus der Praxis und psychologischen Arbeit.
+            Impulse zu psychischer Flexibilität, ACT und persönlicher Entwicklung
+            aus der psychologischen Beratung.
           </p>
         </header>
 

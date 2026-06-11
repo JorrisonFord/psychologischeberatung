@@ -8,7 +8,7 @@ export const en = {
   },
 
   hero: {
-    subtitle: "ACT-based psychological counseling",
+    subtitle: "Psychological Counseling (ACT)",
     title: "A space for clarity, calm, and inner alignment",
     description:
       "In my psychological counseling, I support you in developing a more conscious relationship with your thoughts and emotions and in shaping a life guided by your personal values. The focus is not on pressure to change, but on developing psychological flexibility and creating more space for what truly matters to you.",
@@ -46,15 +46,15 @@ export const en = {
       counseling: {
         title: "Psychological Counseling",
         description:
-          "In a safe and confidential setting, I support you in navigating life crises, anxiety, and emotionally challenging situations. Together we develop new perspectives and concrete ways forward.",
+          "I support you in navigating life crises, anxiety, and emotionally challenging situations. Together we develop new perspectives and concrete ways forward.",
         features: ["New perspectives", "Individual counseling", "Clarity & orientation"],
       },
 
       yoga: {
         title: "Mindfulness & Body Work",
         description:
-          "Through mindfulness, breathwork, and gentle body-based exercises, you strengthen your ability to notice inner processes and regulate stress more effectively.",
-        features: ["Mindfulness practice", "Breathwork", "Emotion regulation"],
+          "Drawing on my long-standing experience in yoga, I combine mindfulness, breathwork, and gentle body-based exercises. This strengthens your ability to notice inner processes more consciously and regulate stress more effectively.",
+        features: ["Yoga & mindfulness", "Breathwork", "Emotion regulation"],
       },
 
       act: {
@@ -72,7 +72,7 @@ export const en = {
 
   philosophy: {
     subtitle: "My approach",
-    title: "An ACT-based and mindful approach",
+    title: "Mindful psychological counseling with clarity and a holistic perspective",
     pillars: {
       empathy: {
         title: "Empathy",
@@ -80,14 +80,14 @@ export const en = {
           "I meet you with openness and attentiveness to your individual life situation. In a space of acceptance, everything you bring is welcome.",
       },
       safety: {
-        title: "Safety",
+        title: "Orientation",
         description:
-          "Confidentiality and a protected framework form the foundation of our work together. Here you can open up without fear of judgment.",
+          "Together, we clarify what is moving you, what matters to you, and which next steps may feel coherent. This creates greater clarity in dealing with inner and outer challenges.",
       },
       wholeness: {
-        title: "Wholeness",
+        title: "Mindfulness",
         description:
-          "Body, thoughts, and emotions are in constant interaction and shape the way we experience life. My approach integrates these dimensions into a coherent overall picture.",
+          "Body, thoughts, and emotions are in constant interaction and shape the way we experience life. Mindfulness helps you notice these dimensions more consciously and develop new room for choice.",
       },
     },
   },
@@ -145,6 +145,8 @@ export const en = {
   },
 
   footer: {
+    tagline:
+      "Psychological counseling (ACT) for greater inner clarity, psychological flexibility, and personal development.",
     copyright: "© 2026 Joris van Bohemen. All rights reserved.",
     privacy: "Privacy Policy",
     imprint: "Legal Notice",

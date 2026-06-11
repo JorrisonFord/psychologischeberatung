@@ -15,7 +15,6 @@ export function Footer() {
     { label: t.nav.about, href: '#about' },
     { label: t.nav.services, href: '#services' },
     { label: t.nav.philosophy, href: '#philosophy' },
-    { label: t.nav.testimonials, href: '#testimonials' },
     { label: t.nav.contact, href: '#contact' },
   ];
 
@@ -46,7 +45,7 @@ export function Footer() {
               </a>
 
               <p className="text-white/60 leading-relaxed max-w-sm">
-                ACT-basierte psychologische Beratung für mehr innere Klarheit, psychische Flexibilität und persönliche Entwicklung.
+                {t.footer.tagline}
               </p>
             </div>
 

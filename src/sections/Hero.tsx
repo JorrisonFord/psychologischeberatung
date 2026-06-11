@@ -50,7 +50,7 @@ export function Hero() {
               }`}
             >
               <span className="inline-block text-sm md:text-base font-medium tracking-wider text-[#B5725A] uppercase mb-4">
-                ACT-basierte psychologische Beratung
+                {t.hero.subtitle}
               </span>
             </div>
 
@@ -108,7 +108,7 @@ export function Hero() {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-[#3D3229]/10 aspect-[4/5] lg:aspect-[3/4]">
                 <img
                   src="/images/portrait.jpg"
-                  alt="ACT-basierte psychologische Beratung"
+                  alt={t.hero.subtitle}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#3D3229]/20 via-transparent to-transparent" />

@@ -1,6 +1,10 @@
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { useLanguage } from '../../context/LanguageContext';
 
 export function PsychologischeFlexibilitaet() {
+  const { t } = useLanguage();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -11,6 +15,17 @@ export function PsychologischeFlexibilitaet() {
 
         {/* HERO / TITLE */}
         <header className="mb-12">
+          <Link
+            to="/blog"
+            className="inline-block text-sm font-medium text-[#B5725A] hover:underline mb-6"
+          >
+            Zurück zum Blog
+          </Link>
+
+          <p className="text-sm font-medium tracking-wider text-[#B5725A] uppercase mb-4">
+            {t.hero.subtitle}
+          </p>
+
           <h1 className="font-serif text-4xl md:text-5xl leading-tight mb-4">
             Psychische Flexibilität – was bedeutet das eigentlich?
           </h1>
@@ -118,12 +133,12 @@ export function PsychologischeFlexibilitaet() {
               Begleitung sinnvoll sein.
             </p>
 
-            <a
-              href="/#contact"
+            <Link
+              to="/#contact"
               className="inline-block px-6 py-3 bg-[#B5725A] text-white rounded-full hover:bg-[#9A5D48] transition"
             >
               Kontakt aufnehmen
-            </a>
+            </Link>
           </div>
 
         </section>

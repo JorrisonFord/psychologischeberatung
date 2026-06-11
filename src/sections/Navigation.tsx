@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Menu, X } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 export function Navigation() {
   const { t, language, toggleLanguage } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,11 +19,23 @@ export function Navigation() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (location.pathname !== '/' || !location.hash) {
+      return;
+    }
+
+    const element = document.querySelector(location.hash);
+    if (element) {
+      window.requestAnimationFrame(() => {
+        element.scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+  }, [location]);
+
   const navItems = [
     { label: t.nav.about, href: '#about' },
     { label: t.nav.services, href: '#services' },
     { label: t.nav.philosophy, href: '#philosophy' },
-    { label: t.nav.testimonials, href: '#testimonials' },
     { label: 'Blog', href: '/blog', isRoute: true },
     { label: t.nav.contact, href: '#contact' },
   ];
@@ -37,6 +50,11 @@ export function Navigation() {
     }
 
     // SCROLL SECTIONS
+    if (location.pathname !== '/') {
+      navigate(`/${item.href}`);
+      return;
+    }
+
     const element = document.querySelector(item.href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -60,6 +78,11 @@ export function Navigation() {
               href="#"
               onClick={(e) => {
                 e.preventDefault();
+                if (location.pathname !== '/') {
+                  navigate('/');
+                  return;
+                }
+
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
               className="flex flex-col leading-tight hover:text-[#B5725A] transition-colors"
@@ -68,7 +91,7 @@ export function Navigation() {
                 Joris van Bohemen
               </span>
               <span className="text-[11px] md:text-xs text-[#3D3229]/50 tracking-wide mt-0.5">
-                ACT-basierte psychologische Beratung
+                {t.hero.subtitle}
               </span>
             </a>
 

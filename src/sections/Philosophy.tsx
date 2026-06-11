@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { Heart, Shield, Sparkles } from 'lucide-react';
+import { Compass, Heart, Sun } from 'lucide-react';
 
 export function Philosophy() {
   const { t } = useLanguage();
@@ -34,13 +34,13 @@ export function Philosophy() {
     },
     {
       key: 'safety' as const,
-      icon: Shield,
+      icon: Compass,
       color: 'bg-[#7A8B6E]/10',
       iconColor: 'text-[#7A8B6E]',
     },
     {
       key: 'wholeness' as const,
-      icon: Sparkles,
+      icon: Sun,
       color: 'bg-[#A89B8C]/10',
       iconColor: 'text-[#A89B8C]',
     },
@@ -61,21 +61,14 @@ export function Philosophy() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16 md:mb-24">
+        <div className="text-center max-w-2xl mx-auto mb-16 md:mb-20">
           <span
-            className={`inline-block text-sm font-medium tracking-wider text-[#B5725A] uppercase mb-4 transition-all duration-700 ${
+            className={`inline-block text-sm font-medium tracking-wider text-[#B5725A] uppercase transition-all duration-700 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
             }`}
           >
             {t.philosophy.subtitle}
           </span>
-          <h2
-            className={`font-serif text-3xl md:text-4xl lg:text-5xl text-[#3D3229] transition-all duration-700 delay-100 ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-            }`}
-          >
-            {t.philosophy.title}
-          </h2>
         </div>
 
         {/* Pillars */}

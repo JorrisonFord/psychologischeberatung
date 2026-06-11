@@ -8,7 +8,7 @@ export const de = {
   },
 
   hero: {
-    subtitle: "ACT-basierte psychologische Beratung",
+    subtitle: "Psychologische Beratung (ACT)",
     title: "Ein Raum für Klarheit, Ruhe und innere Ausrichtung",
     description:
       "In meiner psychologischen Beratung unterstütze ich Sie dabei, einen bewussteren Umgang mit Gedanken und Gefühlen zu entwickeln und ein Leben zu gestalten, das sich an Ihren persönlichen Werten orientiert. Es geht nicht um Veränderungsdruck, sondern um die Entwicklung psychischer Flexibilität und mehr Raum für das, was Ihnen wirklich wichtig ist.",
@@ -23,7 +23,7 @@ export const de = {
       "Ich bin Master-Psychologe mit Schwerpunkt Neuropsychologie und arbeite integrativ mit psychologischer Beratung und Acceptance & Commitment Therapy (ACT). Im Mittelpunkt steht die Förderung psychischer Flexibilität und ein bewusster Umgang mit inneren Prozessen.",
 
     paragraph2:
-      "Ergänzend bringe ich langjährige Erfahrung in Yoga und Körperarbeit sowie eine erlebnispädagogische Ausbildung in meine Arbeit ein. Dadurch entsteht ein ganzheitlicher Zugang, der Körper, Emotion und Denken miteinander verbindet.",
+      "Ergänzend bringe ich langjährige Erfahrung in Yoga und Körperarbeit sowie eine erlebnispädagogische Ausbildung in meine Arbeit ein. Dadurch entsteht ein ganzheitlicher Zugang, der Körper, Gefühle und Denken miteinander verbindet.",
 
     paragraph3:
       "Mir ist es wichtig, Ihnen in einem ruhigen und verlässlichen Rahmen zu begegnen, in dem echte Offenheit entstehen kann.",
@@ -46,15 +46,15 @@ export const de = {
       counseling: {
         title: "Psychologische Beratung",
         description:
-          "In einem sicheren und vertraulichen Rahmen begleite ich Sie bei persönlichen Krisen, Ängsten und herausfordernden Lebenssituationen. Gemeinsam entwickeln wir neue Perspektiven und konkrete Handlungsmöglichkeiten.",
+          "Ich begleite Sie bei persönlichen Krisen, Ängsten und herausfordernden Lebenssituationen. Gemeinsam entwickeln wir neue Perspektiven und konkrete Handlungsmöglichkeiten.",
         features: ["Neue Perspektiven", "Individuelle Beratung", "Klarheit & Orientierung"],
       },
 
       yoga: {
         title: "Achtsamkeit & Körperarbeit",
         description:
-          "Durch Achtsamkeit, Atemarbeit und sanfte Körperübungen stärken Sie die Fähigkeit, innere Prozesse bewusster wahrzunehmen und Stress besser zu regulieren.",
-        features: ["Achtsamkeitspraxis", "Atemarbeit", "Emotionsregulation"],
+          "Auf Grundlage meiner langjährigen Yoga-Erfahrung verbinde ich Achtsamkeit, Atemarbeit und sanfte Körperübungen. So stärken Sie die Fähigkeit, innere Prozesse bewusster wahrzunehmen und Stress besser zu regulieren.",
+        features: ["Yoga & Achtsamkeit", "Atemarbeit", "Gefühlsregulation"],
       },
 
       act: {
@@ -68,7 +68,7 @@ export const de = {
 
   philosophy: {
     subtitle: "Arbeitsweise",
-    title: "Ein ACT-basierter und achtsamer Ansatz",
+    title: "Achtsame psychologische Beratung mit Klarheit und Ganzheitlichkeit",
     pillars: {
       empathy: {
         title: "Empathie",
@@ -76,14 +76,14 @@ export const de = {
           "Ich begegne Ihnen mit Offenheit und Aufmerksamkeit für Ihre individuelle Lebenssituation. In einem Raum von Akzeptanz darf alles da sein, was Sie mitbringen.",
       },
       safety: {
-        title: "Sicherheit",
+        title: "Orientierung",
         description:
-          "Vertraulichkeit und ein geschützter Rahmen bilden die Grundlage unserer Zusammenarbeit. Hier können Sie sich öffnen, ohne bewertet zu werden.",
+          "Gemeinsam klären wir, was Sie bewegt, was Ihnen wichtig ist und welche nächsten Schritte stimmig sein können. So entsteht mehr Klarheit im Umgang mit inneren und äußeren Herausforderungen.",
       },
       wholeness: {
-        title: "Ganzheitlichkeit",
+        title: "Achtsamkeit",
         description:
-          "Körper, Gedanken und Emotionen stehen in ständiger Wechselwirkung und prägen unser Erleben. Mein Ansatz integriert diese Ebenen zu einem stimmigen Gesamtbild.",
+          "Körper, Gedanken und Gefühle stehen in ständiger Wechselwirkung und prägen unser Erleben. Achtsamkeit hilft dabei, diese Ebenen bewusster wahrzunehmen und neuen Handlungsspielraum zu entwickeln.",
       },
     },
   },
@@ -144,6 +144,8 @@ export const de = {
   },
 
   footer: {
+    tagline:
+      "Psychologische Beratung (ACT) für mehr innere Klarheit, psychische Flexibilität und persönliche Entwicklung.",
     copyright: "© 2026 Joris van Bohemen. Alle Rechte vorbehalten.",
     privacy: "Datenschutz",
     imprint: "Impressum",
