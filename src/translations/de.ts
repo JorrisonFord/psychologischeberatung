@@ -8,26 +8,21 @@ export const de = {
   },
 
   hero: {
-    subtitle: "Psychologische Beratung (ACT)",
-    title: "Ein Raum für Klarheit, Ruhe und innere Ausrichtung",
-    description:
-      "In meiner psychologischen Beratung unterstütze ich Sie dabei, einen bewussteren Umgang mit Gedanken und Gefühlen zu entwickeln und ein Leben zu gestalten, das sich an Ihren persönlichen Werten orientiert. Es geht nicht um Veränderungsdruck, sondern um die Entwicklung psychischer Flexibilität und mehr Raum für das, was Ihnen wirklich wichtig ist.",
-    ctaPrimary: "Termin vereinbaren",
-    ctaSecondary: "Mehr erfahren",
-  },
+  subtitle: "Psychologische Beratung (ACT)",
+  title: "Ein Raum für Ruhe und innere Ausrichtung",
+  description:
+    "In meiner psychologischen Beratung unterstütze ich Sie dabei, einen bewussteren Umgang mit Gedanken und Gefühlen zu entwickeln. Dadurch entsteht mehr innere Klarheit und die Möglichkeit, das eigene Leben an dem auszurichten, was Ihnen wirklich wichtig ist.",
+  ctaPrimary: "Termin vereinbaren",
+  ctaSecondary: "Mehr erfahren",
+},
 
   about: {
     subtitle: "Über mich",
-    title: "Psychologische Beratung für persönliche Entwicklung und Klarheit",
+    title: "Psychologische Beratung auf Basis von ACT",
     paragraph1:
-      "Ich bin Master-Psychologe mit Schwerpunkt Neuropsychologie und arbeite integrativ mit psychologischer Beratung und Acceptance & Commitment Therapy (ACT). Im Mittelpunkt steht die Förderung psychischer Flexibilität und ein bewusster Umgang mit inneren Prozessen.",
-
+    "Ich bin Master-Psychologe mit Schwerpunkt Neuropsychologie und arbeite integrativ mit psychologischer Beratung und Acceptance & Commitment Therapy (ACT). Im Mittelpunkt stehen Akzeptanz innerer Prozesse, psychische Flexibilität und eine werteorientierte Lebensführung.",
     paragraph2:
-      "Ergänzend bringe ich langjährige Erfahrung in Yoga und Körperarbeit sowie eine erlebnispädagogische Ausbildung in meine Arbeit ein. Dadurch entsteht ein ganzheitlicher Zugang, der Körper, Gefühle und Denken miteinander verbindet.",
-
-    paragraph3:
-      "Mir ist es wichtig, Ihnen in einem ruhigen und verlässlichen Rahmen zu begegnen, in dem echte Offenheit entstehen kann.",
-
+    "Ergänzend bringe ich langjährige Erfahrung in Yoga und Körperarbeit sowie eine erlebnispädagogische Ausbildung in meine Arbeit ein. Dadurch entsteht ein ganzheitlicher Zugang, der Körper, Gefühle und Denken miteinander verbindet.",
     credentials: {
       title: "Qualifikationen",
       items: [
