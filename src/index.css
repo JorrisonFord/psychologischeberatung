@@ -1,199 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
 
+/* =====================================================
+   TAILWIND
+===================================================== */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --background: 35 30% 96%;
-    --foreground: 30 15% 20%;
-    --card: 35 25% 98%;
-    --card-foreground: 30 15% 20%;
-    --popover: 35 25% 98%;
-    --popover-foreground: 30 15% 20%;
-    --primary: 18 45% 45%;
-    --primary-foreground: 35 30% 96%;
-    --secondary: 35 20% 90%;
-    --secondary-foreground: 30 15% 20%;
-    --muted: 35 15% 88%;
-    --muted-foreground: 30 10% 45%;
-    --accent: 140 15% 40%;
-    --accent-foreground: 35 30% 96%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 30 15% 85%;
-    --input: 30 15% 85%;
-    --ring: 18 45% 45%;
-    --radius: 0.5rem;
-    
-    --color-terracotta: #B5725A;
-    --color-sage: #7A8B6E;
-    --color-cream: #F5F0E8;
-    --color-warm-beige: #E8DDD0;
-    --color-deep-brown: #3D3229;
-    --color-soft-taupe: #A89B8C;
-  }
-}
+/* =====================================================
+   DESIGN SYSTEM (CLEAN + CONSISTENT)
+===================================================== */
 
 @layer base {
-  * {
-    @apply border-border;
+  :root {
+    /* Colors */
+    --color-background: #F5F0E8;
+    --color-surface: #FFFFFF;
+    --color-text: #3D3229;
+    --color-muted: rgba(61, 50, 41, 0.6);
+
+    --color-primary: #B5725A;
+    --color-secondary: #7A8B6E;
+
+    --color-border: rgba(61, 50, 41, 0.12);
+
+    --color-accent-soft: #E8DDD0;
+
+    /* Radius */
+    --radius: 0.75rem;
   }
-  
+
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply antialiased;
+    background-color: var(--color-background);
+    color: var(--color-text);
     font-family: 'Inter', sans-serif;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 500;
+    line-height: 1.2;
+    color: var(--color-text);
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  * {
+    border-color: var(--color-border);
   }
 }
+
+/* =====================================================
+   TYPOGRAPHY HELPERS
+===================================================== */
 
 @layer utilities {
   .font-serif {
     font-family: 'Cormorant Garamond', serif;
   }
-  
+
   .font-sans {
     font-family: 'Inter', sans-serif;
   }
-  
-  .text-terracotta {
-    color: var(--color-terracotta);
+
+  .text-primary {
+    color: var(--color-primary);
   }
-  
-  .text-sage {
-    color: var(--color-sage);
+
+  .text-muted {
+    color: var(--color-muted);
   }
-  
-  .bg-terracotta {
-    background-color: var(--color-terracotta);
+
+  .bg-primary {
+    background-color: var(--color-primary);
   }
-  
-  .bg-sage {
-    background-color: var(--color-sage);
+
+  .bg-surface {
+    background-color: var(--color-surface);
   }
-  
-  .bg-cream {
-    background-color: var(--color-cream);
+
+  .bg-soft {
+    background-color: var(--color-accent-soft);
   }
-  
-  .bg-warm-beige {
-    background-color: var(--color-warm-beige);
-  }
-  
-  .border-terracotta {
-    border-color: var(--color-terracotta);
-  }
-  
-  .border-sage {
-    border-color: var(--color-sage);
+
+  .border-soft {
+    border-color: var(--color-border);
   }
 }
 
-/* Custom animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+/* =====================================================
+   ANIMATIONS (MINIMAL & SUBTLE)
+===================================================== */
 
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translateY(12px);
   }
   to {
     opacity: 1;
-  }
-}
-
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes gentleFloat {
-  0%, 100% {
     transform: translateY(0);
   }
-  50% {
-    transform: translateY(-10px);
-  }
 }
 
-.animate-fade-in-up {
-  animation: fadeInUp 0.8s ease-out forwards;
+@keyframes fadeInSoft {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .animate-fade-in {
-  animation: fadeIn 0.6s ease-out forwards;
+  animation: fadeIn 0.7s ease-out both;
 }
 
-.animate-slide-in-left {
-  animation: slideInLeft 0.8s ease-out forwards;
+.animate-fade-in-soft {
+  animation: fadeInSoft 0.9s ease-out both;
 }
 
-.animate-slide-in-right {
-  animation: slideInRight 0.8s ease-out forwards;
-}
+/* =====================================================
+   HOVER EFFECTS (SUBTLE)
+===================================================== */
 
-.animate-gentle-float {
-  animation: gentleFloat 4s ease-in-out infinite;
-}
-
-/* Stagger delays */
-.delay-100 { animation-delay: 0.1s; }
-.delay-200 { animation-delay: 0.2s; }
-.delay-300 { animation-delay: 0.3s; }
-.delay-400 { animation-delay: 0.4s; }
-.delay-500 { animation-delay: 0.5s; }
-.delay-600 { animation-delay: 0.6s; }
-
-/* Initial state for animations */
-.opacity-0-initial {
-  opacity: 0;
-}
-
-/* Hover effects */
 .hover-lift {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .hover-lift:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
 }
 
-/* Image hover zoom */
+/* Image zoom */
 .img-zoom-container {
   overflow: hidden;
 }
@@ -203,29 +150,35 @@
 }
 
 .img-zoom-container:hover img {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
-/* Custom scrollbar */
+/* =====================================================
+   SCROLLBAR (MINIMAL)
+===================================================== */
+
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-cream);
+  background: var(--color-background);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-soft-taupe);
-  border-radius: 4px;
+  background: rgba(61, 50, 41, 0.25);
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-terracotta);
+  background: var(--color-primary);
 }
 
-/* Selection color */
+/* =====================================================
+   SELECTION
+===================================================== */
+
 ::selection {
-  background-color: var(--color-terracotta);
+  background-color: var(--color-primary);
   color: white;
 }

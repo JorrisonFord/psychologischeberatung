@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { LanguageProvider } from './context/LanguageContext';
+
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 import { MainLayout } from './layouts/MainLayout';
 
@@ -11,7 +13,7 @@ import { Philosophy } from './sections/Philosophy';
 import { Testimonials } from './sections/Testimonials';
 import { Contact } from './sections/Contact';
 
-import { BlogIndex } from "./pages/blog/BlogIndex";
+import { BlogIndex } from './pages/blog/BlogIndex';
 import { PsychologischeFlexibilitaet } from './pages/blog/PsychologischeFlexibilitaet';
 
 function HomePage() {
@@ -67,6 +69,7 @@ function App() {
           </Routes>
         </BrowserRouter>
         <Analytics />
+        <SpeedInsights />
       </div>
     </LanguageProvider>
   );
