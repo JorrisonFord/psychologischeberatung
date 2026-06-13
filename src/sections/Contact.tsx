@@ -38,21 +38,19 @@ export function Contact() {
     e.preventDefault();
     setError("");
 
+    const form = new FormData();
+
+    form.append("access_key", import.meta.env.VITE_WEB3FORMS_KEY);
+    form.append("name", formData.name);
+    form.append("email", formData.email);
+    form.append("phone", formData.phone);
+    form.append("message", formData.message);
+    form.append("subject", "Neue Kontaktanfrage Coaching Webseite");
+
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          message: formData.message,
-          subject: "Neue Kontaktanfrage Coaching Webseite",
-        }),
+        body: form,
       });
 
       const data = await res.json();
@@ -62,13 +60,15 @@ export function Contact() {
 
         setTimeout(() => {
           setIsSubmitted(false);
-          setFormData({ name: '', email: '', phone: '', message: '' });
+          setFormData({ name: "", email: "", phone: "", message: "" });
         }, 3000);
       } else {
         setError("Senden fehlgeschlagen.");
+        console.log("Web3Forms error:", data);
       }
-    } catch {
+    } catch (err) {
       setError("Netzwerkfehler.");
+      console.log(err);
     }
   };
 
@@ -111,6 +111,33 @@ export function Contact() {
       className="relative py-24 md:py-32 bg-[#F5F0E8]"
     >
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+
+        {/* HEADER (FIXED) */}
+        <div className="text-center max-w-2xl mx-auto mb-16">
+          <span
+            className={`inline-block text-sm font-medium tracking-wider text-[#B5725A] uppercase mb-4 transition-all duration-700 ${
+              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+            }`}
+          >
+            {t.contact.subtitle}
+          </span>
+
+          <h2
+            className={`font-serif text-3xl md:text-4xl lg:text-5xl text-[#3D3229] mb-6 transition-all duration-700 delay-100 ${
+              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+            }`}
+          >
+            {t.contact.title}
+          </h2>
+
+          <p
+            className={`text-[#3D3229]/70 transition-all duration-700 delay-200 ${
+              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+            }`}
+          >
+            {t.contact.description}
+          </p>
+        </div>
 
         <div className="grid lg:grid-cols-5 gap-12 lg:gap-16">
 
