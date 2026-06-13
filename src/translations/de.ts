@@ -20,7 +20,7 @@ export const de = {
     title: "Über mich",
     subtitle: "",
     paragraph1:
-    "Ich bin Master-Psychologe mit Schwerpunkt Neuropsychologie und arbeite in meiner psychologischen Beratung auf Basis der Acceptance & Commitment Therapy (ACT). Im Mittelpunkt stehen Akzeptanz innerer Prozesse, psychische Flexibilität und eine werteorientierte Lebensführung.",
+    "Ich bin Master-Psychologe mit Schwerpunkt Neuropsychologie und arbeite in meiner psychologischen Beratung auf Grundlage der Acceptance & Commitment Therapy (ACT). Im Mittelpunkt stehen Akzeptanz innerer Prozesse, psychische Flexibilität und eine werteorientierte Lebensführung.",
     paragraph2:
     "Ergänzend bringe ich langjährige Erfahrung in Yoga und Achtsamkeit sowie eine erlebnispädagogische Ausbildung in meine Arbeit ein. Dadurch entsteht ein ganzheitlicher Zugang, der Körper, Gefühle und Denken miteinander verbindet.",
     credentials: {
