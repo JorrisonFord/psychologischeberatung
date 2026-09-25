@@ -27,7 +27,7 @@ export const de = {
       title: "Qualifikationen",
       items: [
         "M.Sc. Psychologie (Schwerpunkt Neuropsychologie)",
-        "Zertifizierter Acceptance & Commitment Therapy (ACT) Coach",
+        "Zertifizierter ACT Coach",
         "Erfahrener Yoga- und Achtsamkeitslehrer",
         "Ausbildung in Erlebnispädagogik",
       ],
@@ -58,6 +58,31 @@ export const de = {
   },
 },
 
+ servicesIndex: {
+    subtitle: "Angebot",
+    title: "Wie ich Sie begleiten kann",
+    description:
+      "Unterschiedliche Wege, um innezuhalten, neue Perspektiven zu entwickeln und sich wieder stärker an dem auszurichten, was Ihnen wichtig ist.",
+    learnMore: "Mehr erfahren",
+    items: {
+      counseling: {
+        title: "Psychologische Beratung",
+        description:
+          "Ich begleite Sie bei persönlichen Krisen, Ängsten und herausfordernden Lebenssituationen. Gemeinsam entwickeln wir konkrete Handlungsmöglichkeiten sowie einen Umgang mit ungewollten Gedanken und Gefühlen.",
+      },
+      yoga: {
+        title: "Yoga & Achtsamkeit",
+        description:
+          "Ich unterstütze Sie dabei, über einfache Atem- und Körperübungen innere Flexibilität zu entwickeln. Dadurch können Sie Gedanken und Gefühle bewusster wahrnehmen und Stress besser regulieren.",
+      },
+      act: {
+        title: "ACT & Wertearbeit",
+        description:
+          "Acceptance and Commitment Therapy (ACT) unterstützt Sie dabei, Gedanken und Gefühle anzunehmen, ohne von ihnen gesteuert zu werden. Dadurch entsteht mehr innere Flexibilität und die Möglichkeit, der Mensch zu sein, der Sie wirklich sein möchten.",
+      },
+    },
+  },
+
   philosophy: {
     subtitle: "Arbeitsweise",
     title: "Achtsame psychologische Beratung mit Klarheit und Ganzheitlichkeit",
@@ -75,7 +100,7 @@ export const de = {
       commitment: {
         title: "Engagement",
         description:
-          "Wir klären, was Ihnen wichtig ist und welche nächsten Schritte für Sie stimmig sein können. So können Sie Ihr Handeln zunehmend an Ihren persönlichen Werten und dem ausrichten, was für Sie persönlich bedeutsam ist.",
+          "Wir klären, was Ihnen wichtig ist und welche nächsten Schritte für Sie stimmig sein können. So können Sie Ihr Handeln zunehmend an Ihren persönlichen Werten und dem ausrichten, was für Sie bedeutsam ist.",
       },
     },
   },
@@ -104,6 +129,8 @@ export const de = {
       },
     ],
   },
+
+ 
 
   contact: {
     subtitle: "Kontakt",
@@ -137,7 +164,7 @@ export const de = {
 
   footer: {
     tagline:
-      "Psychologische Beratung | ACT Coaching für mehr innere Flexibilität und persönliche Entwicklung.",
+      "Psychologische Beratung & ACT Coaching\nFür mehr innere Flexibilität und persönliche Entwicklung",
     copyright: "© 2026 Joris van Bohemen. Alle Rechte vorbehalten.",
     privacy: "Datenschutz",
     imprint: "Impressum",

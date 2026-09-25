@@ -33,7 +33,7 @@ export function Navigation() {
 
   const navItems = [
     { label: t.nav.about, href: '#about' },
-    { label: t.nav.services, href: '#services' },
+    { label: t.nav.services, href: '/services', isRoute: true },
     { label: t.nav.philosophy, href: '#philosophy' },
     { label: 'Blog', href: '/blog', isRoute: true },
     {

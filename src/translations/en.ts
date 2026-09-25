@@ -8,10 +8,10 @@ export const en = {
   },
 
   hero: {
-    subtitle: "Psychological Counseling (ACT)",
-    title: "A space for calm and inner alignment",
+    subtitle: "Psychological Counseling | ACT Coach",
+    title: "A space for acceptance and personal development",
     description:
-      "I support you in developing a more conscious relationship with your thoughts and emotions. This creates greater inner freedom and the possibility to align your life with what truly matters to you.",
+      "I support you in developing a more conscious relationship with your thoughts and feelings. This creates more inner flexibility and the possibility to align your life with what truly matters to you.",
     ctaPrimary: "Book a session",
     ctaSecondary: "Learn more",
   },
@@ -20,16 +20,16 @@ export const en = {
     title: "About me",
     subtitle: "",
     paragraph1:
-      "I am a Master's-level psychologist specializing in neuropsychology and work in psychological counseling based on Acceptance and Commitment Therapy (ACT). My focus is on acceptance of inner experiences, psychological flexibility, and value-oriented living.",
+      "I hold a Master's degree in Psychology with specialization in Neuropsychology and work in psychological counseling based on Acceptance and Commitment Therapy (ACT). My focus is on acceptance of inner experiences, psychological flexibility, and value-oriented living.",
 
     paragraph2:
-      "In addition, I bring long-standing experience in yoga and mindfulness as well as training in experiential education. This allows for an integrative approach that connects body, emotions, and cognition.",
+      "In addition, I bring long-standing experience in yoga and mindfulness as well as training in experiential education. This allows for an integrative approach that connects body, thoughts, and feelings.",
 
     credentials: {
       title: "Qualifications",
       items: [
         "M.Sc. Psychology (Neuropsychology specialization)",
-        "Training in Acceptance and Commitment Therapy (ACT)",
+        "Certified Acceptance & Commitment Therapy (ACT) Coach",
         "Experienced yoga and mindfulness teacher",
         "Training in experiential education",
       ],
@@ -43,19 +43,47 @@ export const en = {
       counseling: {
         title: "Psychological Counseling",
         description:
-          "I support you in navigating personal crises, anxiety, and challenging life situations. Together we develop concrete ways forward and new perspectives in dealing with thoughts and emotions.",
+          "I support you through personal crises, anxiety, and challenging life situations. Together, we develop concrete ways of moving forward and find a more helpful way of relating to unwanted thoughts and feelings.",
       },
 
       yoga: {
         title: "Yoga & Mindfulness",
         description:
-          "Through simple breathing and body-based exercises, I support you in reconnecting with yourself. This helps you become more aware of inner processes and regulate stress more effectively.",
+          "I support you in developing psychological flexibility through simple breathing and body-based exercises. This can help you become more aware of your thoughts and feelings and regulate stress more effectively.",
       },
 
       act: {
         title: "ACT",
         description:
-          "Acceptance and Commitment Therapy (ACT) supports you in accepting thoughts and emotions without being controlled by them. This fosters psychological flexibility and the possibility of living in accordance with your personal values.",
+          "Acceptance and Commitment Therapy (ACT) supports you in accepting thoughts and feelings without being controlled by them. This creates more inner flexibility and the possibility of living in a way that reflects who you want to be.",
+      },
+    },
+},
+
+servicesIndex: {
+    subtitle: "Services",
+    title: "How I can support you",
+    description:
+      "Different ways to personal development, gain new perspectives, and realign with what matters to you.",
+    learnMore: "Learn more",
+
+    items: {
+      counseling: {
+        title: "Psychological Counseling",
+        description:
+          "I support you through personal crises, anxiety, and challenging life situations. Together, we develop concrete ways of moving forward and find a more helpful way of relating to unwanted thoughts and feelings.",
+      },
+
+      yoga: {
+        title: "Yoga & Mindfulness",
+        description:
+          "I support you in developing psychological flexibility through simple breathing and body-based exercises. This can help you become more aware of your thoughts and feelings and regulate stress more effectively.",
+      },
+
+      act: {
+        title: "ACT",
+        description:
+          "Acceptance and Commitment Therapy (ACT) supports you in accepting thoughts and feelings without being controlled by them. This creates more inner flexibility and the possibility of living in a way that reflects who you want to be.",
       },
     },
   },
@@ -63,23 +91,24 @@ export const en = {
   philosophy: {
     subtitle: "Approach",
     title: "Mindful psychological counseling with clarity and a holistic perspective",
+
     pillars: {
       acceptance: {
         title: "Acceptance",
         description:
-          "I meet you with openness and attentiveness to your individual life situation. In a space of acceptance, everything you bring is welcome.",
+          "I meet you with openness and empathy for your individual life situation. In a space of acceptance, there is room for everything you bring with you – including thoughts and feelings that may feel difficult or burdensome.",
       },
 
       mindfulness: {
         title: "Mindfulness",
         description:
-          "Together we clarify what is affecting you, what matters to you, and which next steps feel right. This creates greater ease in dealing with inner and outer challenges.",
+          "Together, we practice arriving in the present moment and becoming more aware of your thoughts and feelings. This creates space to pause and find a way of relating to them that feels right for you.",
       },
 
       commitment: {
         title: "Commitment",
         description:
-          "Body, thoughts, and emotions constantly influence one another and shape our experience. Mindfulness helps you become more aware of these dimensions and develop new freedom of action.",
+          "We explore what matters to you and which next steps feel right for you. This can help you increasingly align your actions with your personal values and what is meaningful to you.",
       },
     },
   },
@@ -108,6 +137,8 @@ export const en = {
       },
     ],
   },
+
+  
 
   contact: {
     subtitle: "Contact",
@@ -141,7 +172,7 @@ export const en = {
 
   footer: {
     tagline:
-      "Psychological counseling (ACT) for greater psychological flexibility and personal development.",
+      "Psychological counseling & ACT Coaching\nFor more inner flexibility and personal development",
     copyright: "© 2026 Joris van Bohemen. All rights reserved.",
     privacy: "Privacy Policy",
     imprint: "Legal Notice",

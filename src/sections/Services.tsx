@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { MessageCircle, Sun, Navigation } from 'lucide-react';
 
@@ -83,8 +84,9 @@ export function Services() {
             const serviceData = t.services.items[service.key];
 
             return (
-              <div
+              <Link
                 key={service.key}
+                to={`/services/${service.key}`}
                 className={`group relative flex flex-col bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-[#3D3229]/10 transition-all duration-500 hover:-translate-y-1 hover:border-[#B5725A]/20 ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
                 }`}
@@ -106,7 +108,7 @@ export function Services() {
                   </div>
                 </div>
 
-                {/* Content */}
+               {/* Content */}
                 <div className="flex flex-1 flex-col p-6 lg:p-8">
                   <h3 className="font-serif text-2xl text-[#3D3229] mb-4 group-hover:text-[#B5725A] transition-colors">
                     {serviceData.title}
@@ -115,11 +117,15 @@ export function Services() {
                   <p className="text-[#3D3229]/70 leading-relaxed">
                     {serviceData.description}
                   </p>
+
+                  <span className="mt-6 text-sm font-medium text-[#B5725A]">
+                    {t.servicesIndex.learnMore} →
+                  </span>
                 </div>
 
                 {/* subtle hover line (very minimal structure cue) */}
                 <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#B5725A]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              </div>
+              </Link>
             );
           })}
         </div>

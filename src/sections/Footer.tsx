@@ -44,7 +44,7 @@ export function Footer() {
                 <span className="italic">Joris</span> van Bohemen
               </a>
 
-              <p className="text-white/60 leading-relaxed max-w-sm">
+              <p className="text-white/60 leading-relaxed max-w-sm whitespace-pre-line">
                 {t.footer.tagline}
               </p>
             </div>
