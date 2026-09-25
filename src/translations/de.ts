@@ -8,10 +8,10 @@ export const de = {
   },
 
   hero: {
-  subtitle: "Psychologische Beratung (ACT)",
-  title: "Ein Raum für Ruhe und innere Ausrichtung",
+  subtitle: "Psychologische Beratung | ACT Coach",
+  title: "Ein Raum für Akzeptanz und persönliche Entwicklung",
   description:
-    "Ich unterstütze Sie dabei, einen bewussteren Umgang mit Gedanken und Gefühlen zu entwickeln. Dadurch entsteht mehr innere Freiheit und die Möglichkeit, das eigene Leben an dem auszurichten, was Ihnen wirklich wichtig ist.",
+    "Ich unterstütze Sie dabei, einen bewussteren Umgang mit Gedanken und Gefühlen zu entwickeln. Dadurch entsteht mehr innere Flexibilität und die Möglichkeit, das eigene Leben an dem auszurichten, was Ihnen wirklich wichtig ist.",
   ctaPrimary: "Gespräch vereinbaren",
   ctaSecondary: "Mehr erfahren",
 },
@@ -20,14 +20,14 @@ export const de = {
     title: "Über mich",
     subtitle: "",
     paragraph1:
-    "Ich bin Master-Psychologe mit Schwerpunkt Neuropsychologie und arbeite in meiner psychologischen Beratung auf Grundlage der Acceptance & Commitment Therapy (ACT). Im Mittelpunkt stehen Akzeptanz innerer Prozesse, psychische Flexibilität und eine werteorientierte Lebensführung.",
+    "Ich bin Master-Psychologe mit Schwerpunkt Neuropsychologie und arbeite in meiner psychologischen Beratung auf Grundlage der Acceptance & Commitment Therapy (ACT). Im Mittelpunkt stehen Akzeptanz innerer Prozesse, psychische Flexibilität und eine werteorientierte Lebensweise.",
     paragraph2:
-    "Ergänzend bringe ich langjährige Erfahrung in Yoga und Achtsamkeit sowie eine erlebnispädagogische Ausbildung in meine Arbeit ein. Dadurch entsteht ein ganzheitlicher Zugang, der Körper, Gefühle und Denken miteinander verbindet.",
+    "Ergänzend bringe ich langjährige Erfahrung in Yoga und Achtsamkeit sowie eine erlebnispädagogische Ausbildung in meine Arbeit ein. Ein ganzheitlicher Ansatz, der Körper, Gedanken und Gefühle miteinander verbindet.",
     credentials: {
       title: "Qualifikationen",
       items: [
         "M.Sc. Psychologie (Schwerpunkt Neuropsychologie)",
-        "Weiterbildung in Acceptance & Commitment Therapy (ACT)",
+        "Zertifizierter Acceptance & Commitment Therapy (ACT) Coach",
         "Erfahrener Yoga- und Achtsamkeitslehrer",
         "Ausbildung in Erlebnispädagogik",
       ],
@@ -41,19 +41,19 @@ export const de = {
     counseling: {
       title: "Psychologische Beratung",
       description:
-        "Ich begleite Sie bei persönlichen Krisen, Ängsten und herausfordernden Lebenssituationen. Gemeinsam entwickeln wir konkrete Handlungsmöglichkeiten sowie neue Perspektiven im Umgang mit Gedanken und Gefühlen.",
+        "Ich begleite Sie bei persönlichen Krisen, Ängsten und herausfordernden Lebenssituationen. Gemeinsam entwickeln wir konkrete Handlungsmöglichkeiten sowie einen Umgang mit ungewollten Gedanken und Gefühlen.",
     },
 
     yoga: {
       title: "Yoga & Achtsamkeit",
       description:
-        "Ich unterstütze Sie dabei, über einfache Atem- und Körperübungen wieder mehr in Kontakt mit sich selbst zu kommen. Dadurch können Sie innere Prozesse bewusster wahrnehmen und Stress besser regulieren.",
+        "Ich unterstütze Sie dabei, über einfache Atem- und Körperübungen innere Flexibilität zu entwickeln. Dadurch können Sie Gedanken und Gefühle bewusster wahrnehmen und Stress besser regulieren.",
     },
 
     act: {
       title: "ACT & Wertearbeit",
       description:
-        "Acceptance and Commitment Therapy (ACT) unterstützt Sie dabei, Gedanken und Gefühle anzunehmen, ohne von ihnen gesteuert zu werden. Dadurch entsteht mehr psychische Flexibilität und die Möglichkeit, das eigene Leben an persönlichen Werten auszurichten.",
+        "Acceptance and Commitment Therapy (ACT) unterstützt Sie dabei, Gedanken und Gefühle anzunehmen, ohne von ihnen gesteuert zu werden. Dadurch entsteht mehr innere Flexibilität und die Möglichkeit, der Mensch zu sein, der Sie wirklich sein möchten.",
     },
   },
 },
@@ -62,20 +62,20 @@ export const de = {
     subtitle: "Arbeitsweise",
     title: "Achtsame psychologische Beratung mit Klarheit und Ganzheitlichkeit",
     pillars: {
-      empathy: {
-        title: "Empathie",
+      acceptance: {
+        title: "Akzeptanz",
         description:
-          "Ich begegne Ihnen mit Offenheit und Aufmerksamkeit für Ihre individuelle Lebenssituation. In einem Raum von Akzeptanz darf alles da sein, was Sie mitbringen.",
+          "Ich begegne Ihnen mit Offenheit und Empathie für Ihre individuelle Lebenssituation. In einem Raum von Akzeptanz darf da sein, was Sie mitbringen – auch Gedanken und Gefühle, die unangenehm oder belastend sein können.",
       },
-      safety: {
-        title: "Orientierung",
-        description:
-          "Gemeinsam klären wir, was Sie bewegt, was Ihnen wichtig ist und welche nächsten Schritte stimmig sein können. So entsteht mehr Klarheit im Umgang mit inneren und äußeren Herausforderungen.",
-      },
-      wholeness: {
+      mindfulness: {
         title: "Achtsamkeit",
         description:
-          "Körper, Gedanken und Gefühle stehen in ständiger Wechselwirkung und prägen unser Erleben. Achtsamkeit hilft dabei, diese Ebenen bewusster wahrzunehmen und neuen Handlungsspielraum zu entwickeln.",
+          "Wir üben gemeinsam, im Hier und Jetzt anzukommen und Gedanken und Gefühle bewusster wahrzunehmen. So entsteht Raum, innezuhalten und einen Umgang mit ihnen zu finden, der Ihnen entspricht.",
+      },
+      commitment: {
+        title: "Engagement",
+        description:
+          "Wir klären, was Ihnen wichtig ist und welche nächsten Schritte für Sie stimmig sein können. So können Sie Ihr Handeln zunehmend an Ihren persönlichen Werten und dem ausrichten, was für Sie persönlich bedeutsam ist.",
       },
     },
   },
@@ -137,7 +137,7 @@ export const de = {
 
   footer: {
     tagline:
-      "Psychologische Beratung (ACT) für mehr innere Klarheit, psychische Flexibilität und persönliche Entwicklung.",
+      "Psychologische Beratung | ACT Coaching für mehr innere Flexibilität und persönliche Entwicklung.",
     copyright: "© 2026 Joris van Bohemen. Alle Rechte vorbehalten.",
     privacy: "Datenschutz",
     imprint: "Impressum",

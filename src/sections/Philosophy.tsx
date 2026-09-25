@@ -27,20 +27,20 @@ export function Philosophy() {
 
   const pillars = [
     {
-      key: 'empathy' as const,
+      key: 'acceptance' as const,
       icon: Heart,
       color: 'bg-[#B5725A]/10',
       iconColor: 'text-[#B5725A]',
     },
     {
-      key: 'safety' as const,
-      icon: Compass,
+      key: 'mindfulness' as const,
+      icon: Sun,
       color: 'bg-[#7A8B6E]/10',
       iconColor: 'text-[#7A8B6E]',
     },
     {
-      key: 'wholeness' as const,
-      icon: Sun,
+      key: 'commitment' as const,
+      icon: Compass,
       color: 'bg-[#A89B8C]/10',
       iconColor: 'text-[#A89B8C]',
     },

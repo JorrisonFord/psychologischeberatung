@@ -64,20 +64,20 @@ export const en = {
     subtitle: "Approach",
     title: "Mindful psychological counseling with clarity and a holistic perspective",
     pillars: {
-      empathy: {
-        title: "Empathy",
+      acceptance: {
+        title: "Acceptance",
         description:
           "I meet you with openness and attentiveness to your individual life situation. In a space of acceptance, everything you bring is welcome.",
       },
 
-      safety: {
-        title: "Orientation",
+      mindfulness: {
+        title: "Mindfulness",
         description:
           "Together we clarify what is affecting you, what matters to you, and which next steps feel right. This creates greater ease in dealing with inner and outer challenges.",
       },
 
-      wholeness: {
-        title: "Mindfulness",
+      commitment: {
+        title: "Commitment",
         description:
           "Body, thoughts, and emotions constantly influence one another and shape our experience. Mindfulness helps you become more aware of these dimensions and develop new freedom of action.",
       },
