@@ -59,7 +59,7 @@ export function About() {
               {/* Quote card */}
               <div className="absolute -bottom-6 right-8 bg-white rounded-2xl shadow-lg p-6 max-w-xs">
                 <p className="font-serif text-lg italic text-[#3D3229] leading-relaxed">
-                  "Ein erfülltes Leben entsteht, wenn wir lernen, bewusst mit dem umzugehen, was in uns geschieht."
+                {t.about.quote}
                 </p>
               </div>
             </div>

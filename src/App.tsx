@@ -20,7 +20,7 @@ import { PsychologischeFlexibilitaet } from './pages/blog/PsychologischeFlexibil
 import { ServicesIndex } from './pages/services/ServicesIndex';
 import { PsychologischeBeratung } from './pages/services/PsychologischeBeratung';
 import { YogaAchtsamkeit } from './pages/services/YogaAchtsamkeit';
-import { ActWertearbeit } from './pages/services/ActWertearbeit';
+import { ACTWertearbeit } from './pages/services/ActWertearbeit';
 
 import { Privacy } from './pages/Privacy';
 import { Imprint } from './pages/Imprint';
@@ -108,7 +108,7 @@ function App() {
                 path="/services/act"
                 element={
                   <MainLayout>
-                    <ActWertearbeit />
+                    <ACTWertearbeit />
                   </MainLayout>
                 }
               />  

@@ -20,9 +20,11 @@ export const de = {
     title: "Über mich",
     subtitle: "",
     paragraph1:
-    "Ich bin Master-Psychologe mit Schwerpunkt Neuropsychologie und arbeite in meiner psychologischen Beratung auf Grundlage der Acceptance & Commitment Therapy (ACT). Im Mittelpunkt stehen Akzeptanz innerer Prozesse, psychische Flexibilität und eine werteorientierte Lebensweise.",
+    "Ich bin Master-Psychologe mit Schwerpunkt Neuropsychologie und arbeite in meinem psychologischen Coaching auf Grundlage des ACT-Ansatzes (Acceptance & Commitment Therapy). Im Mittelpunkt stehen Akzeptanz innerer Prozesse, psychische Flexibilität und eine werteorientierte Lebensweise.",
     paragraph2:
     "Ergänzend bringe ich langjährige Erfahrung in Yoga und Achtsamkeit sowie eine erlebnispädagogische Ausbildung in meine Arbeit ein. Ein ganzheitlicher Ansatz, der Körper, Gedanken und Gefühle miteinander verbindet.",
+    quote:
+    "\"Ein erfülltes Leben entsteht, wenn wir lernen, bewusst mit dem umzugehen, was in uns geschieht.\"",
     credentials: {
       title: "Qualifikationen",
       items: [
@@ -35,13 +37,13 @@ export const de = {
   },
 
   services: {
-  title: "Angebote",
-  subtitle: "",
+  title: "Wie ich Sie begleiten kann",
+  subtitle: "Angebote",
   items: {
     counseling: {
       title: "Psychologische Beratung",
       description:
-        "Ich begleite Sie bei persönlichen Krisen, Ängsten und herausfordernden Lebenssituationen. Gemeinsam entwickeln wir konkrete Handlungsmöglichkeiten sowie einen Umgang mit ungewollten Gedanken und Gefühlen.",
+        "Ich begleite Sie bei beruflichen und privaten Veränderungen, anhaltenden Sorgen und herausfordernden Lebenssituationen. Gemeinsam entwickeln wir konkrete Handlungsmöglichkeiten sowie einen flexiblen Umgang mit ungewollten Gedanken und Gefühlen.",
     },
 
     yoga: {
@@ -53,7 +55,7 @@ export const de = {
     act: {
       title: "ACT & Wertearbeit",
       description:
-        "Acceptance and Commitment Therapy (ACT) unterstützt Sie dabei, Gedanken und Gefühle anzunehmen, ohne von ihnen gesteuert zu werden. Dadurch entsteht mehr innere Flexibilität und die Möglichkeit, der Mensch zu sein, der Sie wirklich sein möchten.",
+        "Der ACT-Ansatz (Acceptance and Commitment Therapy) unterstützt Sie dabei, Gedanken und Gefühle anzunehmen, ohne von ihnen gesteuert zu werden. Dadurch entsteht mehr innere Flexibilität und die Möglichkeit, der Mensch zu sein, der Sie wirklich sein möchten.",
     },
   },
 },
@@ -68,7 +70,7 @@ export const de = {
       counseling: {
         title: "Psychologische Beratung",
         description:
-          "Ich begleite Sie bei persönlichen Krisen, Ängsten und herausfordernden Lebenssituationen. Gemeinsam entwickeln wir konkrete Handlungsmöglichkeiten sowie einen Umgang mit ungewollten Gedanken und Gefühlen.",
+          "Ich begleite Sie bei beruflichen und privaten Veränderungen, anhaltenden Sorgen und herausfordernden Lebenssituationen. Gemeinsam entwickeln wir konkrete Handlungsmöglichkeiten sowie einen flexiblen Umgang mit ungewollten Gedanken und Gefühlen.",
       },
       yoga: {
         title: "Yoga & Achtsamkeit",
@@ -78,7 +80,7 @@ export const de = {
       act: {
         title: "ACT & Wertearbeit",
         description:
-          "Acceptance and Commitment Therapy (ACT) unterstützt Sie dabei, Gedanken und Gefühle anzunehmen, ohne von ihnen gesteuert zu werden. Dadurch entsteht mehr innere Flexibilität und die Möglichkeit, der Mensch zu sein, der Sie wirklich sein möchten.",
+          "Der ACT-Ansatz (Acceptance and Commitment Therapy) unterstützt Sie dabei, Gedanken und Gefühle anzunehmen, ohne von ihnen gesteuert zu werden. Dadurch entsteht mehr innere Flexibilität und die Möglichkeit, der Mensch zu sein, der Sie wirklich sein möchten.",
       },
     },
   },

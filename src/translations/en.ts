@@ -20,16 +20,17 @@ export const en = {
     title: "About me",
     subtitle: "",
     paragraph1:
-      "I hold a Master's degree in Psychology with specialization in Neuropsychology and work in psychological counseling based on Acceptance and Commitment Therapy (ACT). My focus is on acceptance of inner experiences, psychological flexibility, and value-oriented living.",
+      "I hold a Master's degree in Psychology with specialization in Neuropsychology and work in psychological coaching based on the ACT approach (Acceptance & Commitment Therapy). My focus is on acceptance of inner processes, psychological flexibility, and value-oriented living.",
 
     paragraph2:
-      "In addition, I bring long-standing experience in yoga and mindfulness as well as training in experiential education. This allows for an integrative approach that connects body, thoughts, and feelings.",
-
+      "In addition, I bring long-standing experience in yoga and mindfulness as well as training in experiential education into my work. A holistic approach that connects body, thoughts, and feelings.",
+    quote:
+    "\"A fulfilling life emerges when we learn to consciously relate to what is happening within us.\"",
     credentials: {
       title: "Qualifications",
       items: [
         "M.Sc. Psychology (Neuropsychology specialization)",
-        "Certified Acceptance & Commitment Therapy (ACT) Coach",
+        "Certified ACT Coach",
         "Experienced yoga and mindfulness teacher",
         "Training in experiential education",
       ],
@@ -37,13 +38,13 @@ export const en = {
   },
 
   services: {
-    title: "Services",
-    subtitle: "",
+    title: "How I can support you",
+    subtitle: "Services",
     items: {
       counseling: {
         title: "Psychological Counseling",
         description:
-          "I support you through personal crises, anxiety, and challenging life situations. Together, we develop concrete ways of moving forward and find a more helpful way of relating to unwanted thoughts and feelings.",
+          "I support you through professional and personal changes, ongoing worries, and challenging life situations. Together, we develop concrete ways of moving forward as well as a flexible way of relating to unwanted thoughts and feelings.",
       },
 
       yoga: {
@@ -53,37 +54,34 @@ export const en = {
       },
 
       act: {
-        title: "ACT",
+        title: "ACT & Values Work",
         description:
-          "Acceptance and Commitment Therapy (ACT) supports you in accepting thoughts and feelings without being controlled by them. This creates more inner flexibility and the possibility of living in a way that reflects who you want to be.",
+          "The ACT approach (Acceptance and Commitment Therapy) supports you in accepting thoughts and feelings without being controlled by them. This creates more inner flexibility and the possibility of being the person you truly want to be.",
       },
     },
-},
+  },
 
-servicesIndex: {
+  servicesIndex: {
     subtitle: "Services",
     title: "How I can support you",
     description:
-      "Different ways to personal development, gain new perspectives, and realign with what matters to you.",
+      "Different ways to relate to unwanted thoughts and feelings, develop new perspectives, and align your life more closely with what truly matters to you.",
     learnMore: "Learn more",
-
     items: {
       counseling: {
         title: "Psychological Counseling",
         description:
-          "I support you through personal crises, anxiety, and challenging life situations. Together, we develop concrete ways of moving forward and find a more helpful way of relating to unwanted thoughts and feelings.",
+          "I support you through professional and personal changes, ongoing worries, and challenging life situations. Together, we develop concrete ways of moving forward as well as a flexible way of relating to unwanted thoughts and feelings.",
       },
-
       yoga: {
         title: "Yoga & Mindfulness",
         description:
           "I support you in developing psychological flexibility through simple breathing and body-based exercises. This can help you become more aware of your thoughts and feelings and regulate stress more effectively.",
       },
-
       act: {
-        title: "ACT",
+        title: "ACT & Values Work",
         description:
-          "Acceptance and Commitment Therapy (ACT) supports you in accepting thoughts and feelings without being controlled by them. This creates more inner flexibility and the possibility of living in a way that reflects who you want to be.",
+          "The ACT approach (Acceptance and Commitment Therapy) supports you in accepting thoughts and feelings without being controlled by them. This creates more inner flexibility and the possibility of being the person you truly want to be.",
       },
     },
   },
@@ -137,8 +135,6 @@ servicesIndex: {
       },
     ],
   },
-
-  
 
   contact: {
     subtitle: "Contact",

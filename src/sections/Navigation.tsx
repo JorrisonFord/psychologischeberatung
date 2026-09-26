@@ -34,7 +34,7 @@ export function Navigation() {
   const navItems = [
     { label: t.nav.services, href: '/services', isRoute: true },
     { label: t.nav.about, href: '#about' },
-    { label: 'Blog', href: '/blog', isRoute: true },
+    /* { label: 'Blog', href: '/blog', isRoute: true }, */
     {
       label: 'Podcast',
       href: 'https://open.spotify.com/show/4wRbB36LtZ2dMtHDn4Z3LL?si=7a0bca36997c4fa5',

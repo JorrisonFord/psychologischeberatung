@@ -90,12 +90,12 @@ export function PsychologischeBeratung() {
 
               isGerman
                 ? {
-                    title: "Ängste, Sorgen und innere Unruhe",
-                    text: "Wenn Gedanken und Sorgen Sie beschäftigen und es schwerfällt, zur Ruhe zu kommen.",
+                    title: "Umgang mit Sorgen und kreisenden Gedanken",
+                    text: "Wenn gedankliche Dauerschleifen oder Alltagsstress Sie blockieren und es schwerfällt zur Ruhe zu kommen.",
                   }
                 : {
-                    title: "Anxiety, worries and inner restlessness",
-                    text: "When worries and recurring thoughts occupy your mind and it becomes difficult to find calm.",
+                    title: "Dealing with worries and recurring thoughts",
+                    text: "When recurring thoughts or everyday stress block you and make it difficult to find calm.",
                   },
 
               isGerman
@@ -242,8 +242,8 @@ export function PsychologischeBeratung() {
 
             <h2 className="font-serif text-3xl md:text-4xl text-[#3D3229] mt-3">
               {isGerman
-                ? "Ein einzelnes Gespräch kann bereits neue Handlungsmöglichkeiten eröffnen."
-                : "A single session can already open up new possibilities for action."}
+                ? "Ein einzelnes Gespräch kann bereits neue Möglichkeiten zu Handeln eröffnen."
+                : "Even a single conversation can open up new possibilities for moving forward."}
             </h2>
 
             <p className="mt-6 text-[#3D3229]/70 leading-relaxed text-lg">
