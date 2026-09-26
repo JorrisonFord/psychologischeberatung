@@ -32,9 +32,8 @@ export function Navigation() {
   }, [location]);
 
   const navItems = [
-    { label: t.nav.about, href: '#about' },
     { label: t.nav.services, href: '/services', isRoute: true },
-    { label: t.nav.philosophy, href: '#philosophy' },
+    { label: t.nav.about, href: '#about' },
     { label: 'Blog', href: '/blog', isRoute: true },
     {
       label: 'Podcast',

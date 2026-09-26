@@ -22,12 +22,15 @@ import { PsychologischeBeratung } from './pages/services/PsychologischeBeratung'
 import { YogaAchtsamkeit } from './pages/services/YogaAchtsamkeit';
 import { ActWertearbeit } from './pages/services/ActWertearbeit';
 
+import { Privacy } from './pages/Privacy';
+import { Imprint } from './pages/Imprint';
+
 function HomePage() {
   return (
     <>
       <Hero />
-      <About />
       <Services />
+      <About />
       <Philosophy />
       <Contact />
     </>
@@ -82,33 +85,53 @@ function App() {
               }
             />
 
-            {/* SERVICE PAGES */}
+              {/* SERVICE PAGES */}
+              <Route
+                path="/services/counseling"
+                element={
+                  <MainLayout>
+                    <PsychologischeBeratung />
+                  </MainLayout>
+                }
+              />
+
+              <Route
+                path="/services/yoga"
+                element={
+                  <MainLayout>
+                    <YogaAchtsamkeit />
+                  </MainLayout>
+                }
+              />
+
+              <Route
+                path="/services/act"
+                element={
+                  <MainLayout>
+                    <ActWertearbeit />
+                  </MainLayout>
+                }
+              />  
+
+            {/* PRIVACY */}
             <Route
-              path="/services/counseling"
+              path="/privacy"
               element={
                 <MainLayout>
-                  <PsychologischeBeratung />
+                  <Privacy />
                 </MainLayout>
               }
             />
-
+            
+            {/* IMPRINT */}
             <Route
-              path="/services/yoga"
+              path="/imprint"
               element={
                 <MainLayout>
-                  <YogaAchtsamkeit />
+                  <Imprint />
                 </MainLayout>
               }
             />
-
-            <Route
-              path="/services/act"
-              element={
-                <MainLayout>
-                  <ActWertearbeit />
-                </MainLayout>
-              }
-            />  
 
           </Routes>
         </BrowserRouter>

@@ -1,7 +1,7 @@
 export const de = {
   nav: {
     about: "Über mich",
-    services: "Angebot",
+    services: "Angebote",
     philosophy: "Arbeitsweise",
     testimonials: "Erfahrungen",
     contact: "Kontakt",
@@ -35,7 +35,7 @@ export const de = {
   },
 
   services: {
-  title: "Angebot",
+  title: "Angebote",
   subtitle: "",
   items: {
     counseling: {
@@ -59,10 +59,10 @@ export const de = {
 },
 
  servicesIndex: {
-    subtitle: "Angebot",
+    subtitle: "Angebote",
     title: "Wie ich Sie begleiten kann",
     description:
-      "Unterschiedliche Wege, um innezuhalten, neue Perspektiven zu entwickeln und sich wieder stärker an dem auszurichten, was Ihnen wichtig ist.",
+      "Unterschiedliche Wege, um mit ungewollten Gedanken und Gefühlen umzugehen, neue Perspektiven zu entwickeln und Ihr Leben stärker an dem auszurichten, was Ihnen wirklich wichtig ist.",
     learnMore: "Mehr erfahren",
     items: {
       counseling: {

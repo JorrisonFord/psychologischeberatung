@@ -11,8 +11,8 @@ export function Hero() {
     setIsVisible(true);
   }, []);
 
-  const scrollToAbout = () => {
-    const element = document.querySelector('#about');
+  const scrollToServices = () => {
+    const element = document.querySelector('#services');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -90,7 +90,7 @@ export function Hero() {
               </button>
 
               <button
-                onClick={scrollToAbout}
+                onClick={scrollToServices}
                 className="group inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-[#3D3229]/20 text-[#3D3229] font-medium rounded-full hover:border-[#B5725A] hover:text-[#B5725A] transition-all duration-300"
               >
                 {t.hero.ctaSecondary}
