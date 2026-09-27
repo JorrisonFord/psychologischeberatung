@@ -119,7 +119,7 @@ export function Services() {
                   </p>
 
                   <span className="mt-6 text-sm font-medium text-[#B5725A]">
-                    {t.servicesIndex.learnMore} →
+                    {t.services.learnMore} →
                   </span>
                 </div>
 

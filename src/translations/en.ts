@@ -61,31 +61,6 @@ export const en = {
     },
   },
 
-  servicesIndex: {
-    subtitle: "Services",
-    title: "How I can support you",
-    description:
-      "Different ways to relate to unwanted thoughts and feelings, develop new perspectives, and align your life more closely with what truly matters to you.",
-    learnMore: "Learn more",
-    items: {
-      counseling: {
-        title: "Psychological Counseling",
-        description:
-          "I support you through professional and personal changes, ongoing worries, and challenging life situations. Together, we develop concrete ways of moving forward as well as a flexible way of relating to unwanted thoughts and feelings.",
-      },
-      yoga: {
-        title: "Yoga & Mindfulness",
-        description:
-          "I support you in developing psychological flexibility through simple breathing and body-based exercises. This can help you become more aware of your thoughts and feelings and regulate stress more effectively.",
-      },
-      act: {
-        title: "ACT & Values Work",
-        description:
-          "The ACT approach (Acceptance and Commitment Therapy) supports you in accepting thoughts and feelings without being controlled by them. This creates more inner flexibility and the possibility of being the person you truly want to be.",
-      },
-    },
-  },
-
   philosophy: {
     subtitle: "Approach",
     title: "Mindful psychological counseling with clarity and a holistic perspective",

@@ -34,15 +34,15 @@ export function ServicesIndex() {
           {/* Header */}
           <div className="text-center max-w-2xl mx-auto mb-16 md:mb-20">
             <span className="inline-block text-sm font-medium tracking-wider text-[#B5725A] uppercase mb-4">
-              {t.servicesIndex.subtitle}
+              {t.services.subtitle}
             </span>
 
             <h1 className="font-serif text-4xl md:text-5xl text-[#3D3229]">
-              {t.servicesIndex.title}
+              {t.services.title}
             </h1>
 
             <p className="mt-6 text-[#3D3229]/70 leading-relaxed">
-              {t.servicesIndex.description}
+              {t.services.description}
             </p>
           </div>
 
@@ -50,7 +50,7 @@ export function ServicesIndex() {
           <div className="grid md:grid-cols-3 gap-8 lg:gap-10">
             {services.map((service) => {
               const Icon = service.icon;
-              const serviceData = t.servicesIndex.items[service.key];
+              const serviceData = t.services.items[service.key];
 
               return (
                 <Link
@@ -85,7 +85,7 @@ export function ServicesIndex() {
                     </p>
 
                     <span className="mt-6 text-sm font-medium text-[#B5725A]">
-                      {t.servicesIndex.learnMore} →
+                      {t.services.learnMore} →
                     </span>
                   </div>
 

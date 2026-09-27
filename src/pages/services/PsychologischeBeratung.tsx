@@ -80,11 +80,11 @@ export function PsychologischeBeratung() {
 
               isGerman
                 ? {
-                    title: "Entscheidungen und Veränderungen",
+                    title: "Schwere Entscheidungen",
                     text: "Wenn eine berufliche oder persönliche Veränderung ansteht und Sie Orientierung suchen.",
                   }
                 : {
-                    title: "Decisions and change",
+                    title: "Difficult decisions",
                     text: "When a personal or professional change lies ahead and you are looking for clarity and direction.",
                   },
 
@@ -110,11 +110,11 @@ export function PsychologischeBeratung() {
 
               isGerman
                 ? {
-                    title: "Konflikte und zwischenmenschliche Situationen",
+                    title: "Zwischenmenschliche Konflikte",
                     text: "Wenn Sie in einer Beziehung, Freundschaft, Familie oder im beruflichen Umfeld feststecken.",
                   }
                 : {
-                    title: "Conflict and interpersonal situations",
+                    title: "Interpersonal conflicts",
                     text: "When you feel stuck in a relationship, friendship, family situation, or professional context.",
                   },
 
@@ -197,7 +197,7 @@ export function PsychologischeBeratung() {
               isGerman
                 ? {
                     number: "03",
-                    title: "Weitergehen",
+                    title: "Weiterkommen",
                     text: "Gemeinsam entwickeln wir konkrete Möglichkeiten, wie Sie mit Ihrer Situation weiter umgehen können.",
                   }
                 : {

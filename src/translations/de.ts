@@ -39,6 +39,9 @@ export const de = {
   services: {
   title: "Wie ich Sie begleiten kann",
   subtitle: "Angebote",
+  description:
+      "Unterschiedliche Wege, um mit ungewollten Gedanken und Gefühlen umzugehen, neue Perspektiven zu entwickeln und Ihr Leben stärker an dem auszurichten, was Ihnen wirklich wichtig ist.",
+    learnMore: "Mehr erfahren",
   items: {
     counseling: {
       title: "Psychologische Beratung",
