@@ -20,10 +20,15 @@ import { PsychologischeFlexibilitaet } from './pages/blog/PsychologischeFlexibil
 import { ServicesIndex } from './pages/services/ServicesIndex';
 import { PsychologischeBeratung } from './pages/services/PsychologischeBeratung';
 import { YogaAchtsamkeit } from './pages/services/YogaAchtsamkeit';
-import { ACTWertearbeit } from './pages/services/ActWertearbeit';
+import { ACTWertearbeit } from './pages/services/ACTWertearbeit';
 
 import { Privacy } from './pages/Privacy';
 import { Imprint } from './pages/Imprint';
+
+import { FlyerA4 } from './marketing/Flyer/FlyerA4';
+import { FlyerMobileScroll } from './marketing/Flyer/FlyerMobileScroll';
+import { FlyerStory } from './marketing/Flyer/FlyerStory';
+import { FlyerExport } from './marketing/FlyerExport';
 
 function HomePage() {
   return (
@@ -131,6 +136,27 @@ function App() {
                   <Imprint />
                 </MainLayout>
               }
+            />
+
+           {/* FLYER */}
+            <Route
+              path="/flyer-A4"
+              element={<FlyerA4 />}
+            />
+
+            <Route
+              path="/flyer-mobile"
+              element={<FlyerMobileScroll />}
+            />
+
+            <Route
+              path="/flyer-story"
+              element={<FlyerStory />}
+            />
+
+            <Route
+              path="/flyer-export"
+              element={<FlyerExport />}
             />
 
           </Routes>

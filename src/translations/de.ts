@@ -8,7 +8,7 @@ export const de = {
   },
 
   hero: {
-  subtitle: "Psychologische Beratung | ACT Coach",
+  subtitle: "Psychologische Beratung | ACT Coaching",
   title: "Ein Raum für Akzeptanz und persönliche Entwicklung",
   description:
     "Ich unterstütze Sie dabei, einen bewussteren Umgang mit Gedanken und Gefühlen zu entwickeln. Dadurch entsteht mehr innere Flexibilität und die Möglichkeit, das eigene Leben an dem auszurichten, was Ihnen wirklich wichtig ist.",

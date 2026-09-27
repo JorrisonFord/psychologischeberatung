@@ -8,7 +8,7 @@ export const en = {
   },
 
   hero: {
-    subtitle: "Psychological Counseling | ACT Coach",
+    subtitle: "Psychological Counseling | ACT Coaching",
     title: "A space for acceptance and personal development",
     description:
       "I support you in developing a more conscious relationship with your thoughts and feelings. This creates more inner flexibility and the possibility to align your life with what truly matters to you.",
