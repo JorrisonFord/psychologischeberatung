@@ -62,7 +62,7 @@ export function ACTWertearbeit() {
 
             <h2 className="font-serif text-4xl md:text-4xl text-[#3D3229] mt-3">
               {isGerman
-                ? "Wenn Sie wissen, dass sich etwas verändern soll."
+                ? "Wenn Sie wirklich etwas verändern möchten."
                 : "When you know that something needs to change."}
             </h2>
 
