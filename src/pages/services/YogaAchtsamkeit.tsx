@@ -42,8 +42,8 @@ export function YogaAchtsamkeit() {
 
           <span className="text-[#3D3229]/60">
             {isGerman
-              ? "50 Minuten · 89 €"
-              : "50 minutes · €89"}
+              ? "50 Minuten · 109 €"
+              : "50 minutes · €109"}
           </span>
         </div>
 
@@ -244,7 +244,7 @@ export function YogaAchtsamkeit() {
 
               <div>
                 <p className="text-3xl font-serif text-[#3D3229]">
-                  89 €
+                  109 €
                 </p>
 
                 <p className="mt-1 text-sm text-[#3D3229]/55">

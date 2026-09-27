@@ -40,8 +40,8 @@ export function PsychologischeBeratung() {
 
             <span className="text-[#3D3229]/60">
               {isGerman
-                ? "Einzeltermin · 50 Minuten · 89 €"
-                : "Individual session · 50 minutes · €89"}
+                ? "Einzeltermin · 50 Minuten · 109 €"
+                : "Individual session · 50 minutes · €109"}
             </span>
           </div>
 
@@ -256,7 +256,7 @@ export function PsychologischeBeratung() {
 
               <div>
                 <p className="text-3xl font-serif text-[#3D3229]">
-                  89 €
+                  109 €
                 </p>
 
                 <p className="mt-1 text-sm text-[#3D3229]/55">
