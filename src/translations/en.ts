@@ -40,6 +40,10 @@ export const en = {
   services: {
     title: "How I can support you",
     subtitle: "Services",
+    description:
+      "Different ways to work with unwanted thoughts and feelings, develop new perspectives, and align your life more closely with what truly matters to you.",
+    learnMore: "Learn more",
+
     items: {
       counseling: {
         title: "Psychological Counseling",
