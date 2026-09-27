@@ -15,8 +15,8 @@ export const flyerContent = {
   },
 
   intro: {
-    title: "Ein Raum für Akzeptanz und persönliche Entwicklung",
-    text: "In meinen Sitzungen darf alles da sein, was Sie mitbringen. Gemeinsam entwickeln wir einen Umgang mit schwierigen Situationen, Gedanken und Gefühlen, damit Sie Ihr Leben wieder flexibler nach Ihren eigenen Vorstellungen ausrichten können.",
+    title: "Ein Gespräch, um Ihre Situation\nin Ruhe zu sortieren",
+    text: "Manchmal gibt es eine konkrete Situation, die uns beschäftigt und bei der wir alleine nicht richtig weiterkommen. In der psychologischen Beratung können Sie Ihre Situation in Ruhe sortieren, neue Perspektiven entwickeln und konkrete nächste Schritte finden.",
   },
 
   offers: {

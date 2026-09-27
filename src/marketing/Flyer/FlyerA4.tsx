@@ -80,10 +80,8 @@ export function FlyerA4() {
         {/* Intro */}
         <div className="mt-[150px] max-w-[1750px] mx-auto text-center">
 
-          <p className="font-serif text-[106px] leading-[1.15]">
-            Ein Raum für Akzeptanz
-            <br />
-            und persönliche Entwicklung
+          <p className="font-serif text-[106px] leading-[1.15] whitespace-pre-line">
+            {flyerContent.intro.title}
           </p>
 
           <p className="mt-[50px] text-[43px] leading-[1.55] text-[#3D3229]/70">

@@ -80,7 +80,7 @@ export function FlyerMobileScroll() {
         {/* Intro */}
         <section className="mt-16 text-center">
 
-          <h2 className="font-serif text-[38px] sm:text-[46px] leading-[1.15]">
+          <h2 className="font-serif text-[38px] sm:text-[46px] leading-[1.15] whitespace-pre-line">
             {flyerContent.intro.title}
           </h2>
 

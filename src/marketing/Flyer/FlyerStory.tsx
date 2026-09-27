@@ -94,7 +94,7 @@ export function FlyerStory() {
         {/* Intro */}
         <section className="mt-[120px] text-center">
 
-          <h2 className="font-serif text-[47px] leading-[1.08]">
+          <h2 className="font-serif text-[47px] leading-[1.08] whitespace-pre-line">
             {flyerContent.intro.title}
           </h2>
 
