@@ -63,31 +63,6 @@ export const de = {
   },
 },
 
- servicesIndex: {
-    subtitle: "Angebote",
-    title: "Wie ich Sie begleiten kann",
-    description:
-      "Unterschiedliche Wege, um mit ungewollten Gedanken und Gefühlen umzugehen, neue Perspektiven zu entwickeln und Ihr Leben stärker an dem auszurichten, was Ihnen wirklich wichtig ist.",
-    learnMore: "Mehr erfahren",
-    items: {
-      counseling: {
-        title: "Psychologische Beratung",
-        description:
-          "Ich begleite Sie bei beruflichen und privaten Veränderungen, anhaltenden Sorgen und herausfordernden Lebenssituationen. Gemeinsam entwickeln wir konkrete Handlungsmöglichkeiten sowie einen flexiblen Umgang mit ungewollten Gedanken und Gefühlen.",
-      },
-      yoga: {
-        title: "Yoga & Achtsamkeit",
-        description:
-          "Ich unterstütze Sie dabei, über einfache Atem- und Körperübungen innere Flexibilität zu entwickeln. Dadurch können Sie Gedanken und Gefühle bewusster wahrnehmen und Stress besser regulieren.",
-      },
-      act: {
-        title: "ACT & Wertearbeit",
-        description:
-          "Der ACT-Ansatz (Acceptance and Commitment Therapy) unterstützt Sie dabei, Gedanken und Gefühle anzunehmen, ohne von ihnen gesteuert zu werden. Dadurch entsteht mehr innere Flexibilität und die Möglichkeit, der Mensch zu sein, der Sie wirklich sein möchten.",
-      },
-    },
-  },
-
   philosophy: {
     subtitle: "Arbeitsweise",
     title: "Achtsame psychologische Beratung mit Klarheit und Ganzheitlichkeit",
