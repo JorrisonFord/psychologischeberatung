@@ -266,8 +266,8 @@ export function ACTWertearbeit() {
 
             <h2 className="font-serif text-3xl md:text-4xl text-[#3D3229] mt-3">
               {isGerman
-                ? "6 Sitzungen zum Preis von 5."
-                : "Six sessions for the price of five."}
+                ? "6 Sitzungen zum Preis von 5"
+                : "Six sessions for the price of five"}
             </h2>
 
             <p className="mt-6 text-[#3D3229]/70 leading-relaxed text-lg">
@@ -280,7 +280,7 @@ export function ACTWertearbeit() {
 
               <div>
                 <p className="text-3xl font-serif text-[#3D3229]">
-                  445 €
+                  545 €
                 </p>
 
                 <p className="mt-1 text-sm text-[#3D3229]/55">
@@ -291,8 +291,8 @@ export function ACTWertearbeit() {
 
                 <p className="mt-2 text-sm text-[#B5725A]">
                   {isGerman
-                    ? "Statt 534 €"
-                    : "Regular price €534"}
+                    ? "Statt 654 €"
+                    : "Regular price €654"}
                 </p>
               </div>
 
