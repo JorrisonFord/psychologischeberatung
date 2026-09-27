@@ -25,8 +25,8 @@ export function PsychologischeBeratung() {
 
           <p className="mt-8 text-lg md:text-xl text-[#3D3229]/70 leading-relaxed max-w-3xl">
             {isGerman
-              ? "Manchmal gibt es eine konkrete Situation, die uns beschäftigt und bei der wir alleine nicht richtig weiterkommen. In der psychologischen Beratung können Sie Ihre Situation in Ruhe sortieren, neue Perspektiven entwickeln und konkrete nächste Schritte finden."
-              : "Sometimes there is a specific situation that occupies your thoughts and leaves you unsure how to move forward. Psychological counseling offers you space to make sense of what is happening, develop new perspectives, and find concrete next steps."}
+              ? "Manchmal gibt es eine konkrete Situation, die uns beschäftigt und bei der wir alleine nicht richtig weiterkommen. In meiner Beratung können Sie Ihre Situation in Ruhe sortieren, neue Perspektiven entwickeln und konkrete nächste Schritte finden."
+              : "Sometimes there is a specific situation that occupies your thoughts and leaves you unsure how to move forward. In my counseling you have the space to make sense of what is happening, develop new perspectives, and find concrete next steps."}
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-4">

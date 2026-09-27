@@ -16,7 +16,7 @@ export const flyerContent = {
 
   intro: {
     title: "Ein Gespräch, um Ihre Situation\nin Ruhe zu sortieren",
-    text: "Manchmal gibt es eine konkrete Situation, die uns beschäftigt und bei der wir alleine nicht richtig weiterkommen. In der psychologischen Beratung können Sie Ihre Situation in Ruhe sortieren, neue Perspektiven entwickeln und konkrete nächste Schritte finden.",
+    text: "Manchmal gibt es eine konkrete Situation, die uns beschäftigt und bei der wir alleine nicht richtig weiterkommen. In meiner Beratung können SieIhre Situation in Ruhe sortieren, neue Perspektiven entwickeln und konkrete nächste Schritte finden.",
   },
 
   offers: {
