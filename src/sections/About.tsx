@@ -29,7 +29,7 @@ export function About() {
     <section
       ref={sectionRef}
       id="about"
-      className="relative py-24 md:py-32 bg-[#F5F0E8]"
+      className="relative py-24 md:py-32 bg-[#F5F0E8] overflow-hidden"
     >
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-[#E8DDD0]/30 -skew-x-12 translate-x-1/4 pointer-events-none" />
