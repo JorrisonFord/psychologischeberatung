@@ -79,7 +79,7 @@ export function Navigation() {
             : 'bg-transparent py-6'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
 
             {/* BRAND */}
@@ -95,7 +95,7 @@ export function Navigation() {
 
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
-              className="flex flex-col leading-tight hover:text-[#B5725A] transition-colors"
+              className="flex min-w-0 flex-col leading-tight hover:text-[#B5725A] transition-colors"
             >
               <span className="font-serif text-lg md:text-xl text-[#3D3229] tracking-tight">
                 Joris van Bohemen

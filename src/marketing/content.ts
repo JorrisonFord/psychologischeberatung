@@ -15,8 +15,8 @@ export const flyerContent = {
   },
 
   intro: {
-    title: "Ein Gespräch, um Ihre Situation\nin Ruhe zu sortieren",
-    text: "Manchmal gibt es eine konkrete Situation, die uns beschäftigt und bei der wir alleine nicht richtig weiterkommen. In meiner Beratung können SieIhre Situation in Ruhe sortieren, neue Perspektiven entwickeln und konkrete nächste Schritte finden.",
+    title: "Damit müssen Sie nicht allein bleiben.",
+    text: "Manchmal gibt es eine konkrete Situation, die uns beschäftigt und bei der wir alleine nicht richtig weiterkommen. In meiner Beratung können Sie Ihre Situation in Ruhe sortieren, neue Perspektiven entwickeln und konkrete nächste Schritte finden.",
   },
 
   offers: {
@@ -27,12 +27,12 @@ export const flyerContent = {
     },
 
     sessions: {
-      label: "Aktuell vergünstigt",
+      label: "Für Ihr Anliegen",
       title: "Einzelsitzungen",
       duration: "50 Minuten",
       location: "Praxis in der Schildergasse, Köln",
       online: "Auch online möglich",
-      price: "89 €",
+      price: "109 €",
       priceNote: "pro Sitzung",
     },
   },

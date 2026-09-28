@@ -48,8 +48,8 @@ export function Footer() {
     <footer className="relative bg-[#3D3229] text-white overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-1/3 w-px h-full bg-gradient-to-b from-white/5 to-transparent" />
-        <div className="absolute top-0 left-2/3 w-px h-full bg-gradient-to-b from-white/5 to-transparent" />
+        <div className="absolute top-0 left-1/2 -translate-x-[40rem] w-px h-full bg-gradient-to-b from-white/5 to-transparent" />
+        <div className="absolute top-0 left-1/2 translate-x-[35rem] w-px h-full bg-gradient-to-b from-white/5 to-transparent" />
       </div>
 
       <div className="relative z-10">
@@ -73,8 +73,8 @@ export function Footer() {
                   window.scrollTo({ top: 0, behavior: 'smooth' });
                 }}
               >
-                <span className="italic">Joris</span> van Bohemen
-              </a>
+                Joris van Bohemen
+                </a>
 
               <p className="text-white/60 leading-relaxed max-w-sm whitespace-pre-line">
                 {t.footer.tagline}
@@ -121,10 +121,7 @@ export function Footer() {
 
               <p className="text-white/40 text-sm flex items-center gap-2">
                 {t.footer.copyright}
-                <Heart
-                  size={14}
-                  className="text-[#B5725A] fill-[#B5725A]"
-                />
+                
               </p>
 
               <div className="flex items-center gap-6">
