@@ -1,5 +1,4 @@
 import { useLanguage } from '../context/LanguageContext';
-import { Heart } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 export function Footer() {
