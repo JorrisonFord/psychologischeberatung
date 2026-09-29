@@ -58,7 +58,7 @@ export const de = {
     act: {
       title: "ACT & Wertearbeit",
       description:
-        "Der ACT-Ansatz (Acceptance and Commitment Therapy) unterstützt Sie dabei, Gedanken und Gefühle anzunehmen, ohne von ihnen gesteuert zu werden. Dadurch entsteht mehr innere Flexibilität und die Möglichkeit, der Mensch zu sein, der Sie wirklich sein möchten.",
+        "Der ACT-Ansatz (Acceptance and Commitment Therapy) unterstützt Sie dabei, Gedanken und Gefühle anzunehmen, ohne sich von ihnen steuern zu lassen. Dadurch entsteht mehr Handlungspielraum und die Möglichkeit, der Mensch zu sein, der Sie wirklich sein möchten.",
     },
   },
 },
@@ -70,17 +70,17 @@ export const de = {
       acceptance: {
         title: "Akzeptanz",
         description:
-          "Ich begegne Ihnen mit Offenheit und Empathie für Ihre individuelle Lebenssituation. In einem Raum von Akzeptanz darf da sein, was Sie mitbringen – auch Gedanken und Gefühle, die unangenehm oder belastend sein können.",
+          "Ich begegne Ihnen mit Offenheit und Empathie für Ihre individuelle Lebenssituation. In einem Raum der Akzeptanz darf da sein, was Sie mitbringen – auch Gedanken und Gefühle, die unangenehm oder belastend sein können.",
       },
       mindfulness: {
         title: "Achtsamkeit",
         description:
-          "Wir üben gemeinsam, im Hier und Jetzt anzukommen und Gedanken und Gefühle bewusster wahrzunehmen. So entsteht Raum, innezuhalten und einen Umgang mit ihnen zu finden, der Ihnen entspricht.",
+          "Wir üben gemeinsam, im Hier und Jetzt anzukommen und Gedanken und Gefühle bewusster wahrzunehmen. So entsteht die Möglichkeit, mehr Akzeptanz für das zu entwickeln, was Sie erleben.",
       },
       commitment: {
         title: "Engagement",
         description:
-          "Wir klären, was Ihnen wichtig ist und welche nächsten Schritte für Sie stimmig sein können. So können Sie Ihr Handeln zunehmend an Ihren persönlichen Werten und dem ausrichten, was für Sie bedeutsam ist.",
+          "Wir klären, was Ihnen wichtig ist, wie Sie sich in Ihrem Leben verhalten möchten und welcher nächste Schritt dazu passt. So erweitern Sie Ihren Handlungsspielraum und können Ihren Alltag zunehmend werteorientiert gestalten.",
       },
     },
   },
