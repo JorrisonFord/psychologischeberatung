@@ -3,9 +3,7 @@
 /* =====================================================
    TAILWIND
 ===================================================== */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* =====================================================
    DESIGN SYSTEM (REFINED / THERAPEUTIC MINIMALISM)

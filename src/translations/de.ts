@@ -111,6 +111,17 @@ export const de = {
   },
 
  
+    businessCard: {
+      name: "Joris van Bohemen",
+      profession: "Psychologische Beratung",
+      focus: ["ACT · Akzeptanz", "Persönliche Entwicklung"],
+      location: "KÖLN · ONLINE",
+      website: "https://jorisvanbohemen.de",
+      closing: [
+        "Für mehr innere Flexibilität",
+        "und persönliche Entwicklung.",
+      ],
+    },
 
   contact: {
     subtitle: "Kontakt",
