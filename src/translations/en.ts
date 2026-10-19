@@ -116,6 +116,17 @@ export const en = {
     ],
   },
 
+  businessCard: {
+    name: "Joris van Bohemen",
+    profession: "Psychological Counseling\nACT Coaching",
+    focus: ["Mindfulness & Yoga"],
+    location: "COLOGNE · ONLINE",
+    website: "https://jorisvanbohemen.de",
+    closing: [
+      "For more inner flexibility and personal development.",
+    ],
+  },
+
   contact: {
     subtitle: "Contact",
     title: "Get in touch",
