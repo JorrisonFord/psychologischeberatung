@@ -56,7 +56,7 @@ export function Hero() {
 
             {/* Title */}
             <h1
-              className={`font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#3D3229] leading-tight mb-6 transition-all duration-700 delay-100 ${
+              className={`whitespace-pre-line font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#3D3229] leading-tight mb-6 transition-all duration-700 delay-100 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
               }`}
             >

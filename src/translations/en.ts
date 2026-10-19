@@ -9,9 +9,9 @@ export const en = {
 
   hero: {
     subtitle: "Psychological Counseling | ACT Coaching",
-    title: "A space for acceptance and personal development",
+    title: "Difficult decision?\nRumination?\nSelf-doubt?",
     description:
-      "I support you in developing a more conscious relationship with your thoughts and feelings. This creates more inner flexibility and the possibility to align your life with what truly matters to you.",
+      "You don't need to become stronger, but your thoughts and feelings can become lighter. I support you in developing a more conscious relationship with your inner processes and doing what truly matters to you.",
     ctaPrimary: "Free 15-minute initial consultation",
     ctaSecondary: "Learn more",
     ctaDescription: "15 minutes · free · no obligation",
