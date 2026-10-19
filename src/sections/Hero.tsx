@@ -72,29 +72,44 @@ export function Hero() {
               {t.hero.description}
             </p>
 
+            
+            
             {/* CTA Buttons */}
             <div
-              className={`flex flex-col sm:flex-row gap-4 transition-all duration-700 delay-300 ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+              className={`transition-all duration-700 delay-300 ${
+                isVisible
+                  ? 'opacity-100 translate-y-0'
+                  : 'opacity-0 translate-y-6'
               }`}
             >
-              <button
-                onClick={scrollToContact}
-                className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#B5725A] text-white font-medium rounded-full hover:bg-[#9A5D48] transition-all duration-300 hover:shadow-lg hover:shadow-[#B5725A]/25 hover:-translate-y-0.5"
-              >
-                {t.hero.ctaPrimary}
-                <ArrowRight
-                  size={18}
-                  className="transition-transform duration-300 group-hover:translate-x-1"
-                />
-              </button>
+              <div className="flex flex-col sm:flex-row items-start gap-3">
+                {/* Primary CTA with description */}
+                <div className="flex flex-col items-center">
+                  <button
+                    onClick={scrollToContact}
+                    className="group inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#B5725A] text-white text-sm md:text-base font-medium rounded-full hover:bg-[#9A5D48] transition-all duration-300 hover:shadow-lg hover:shadow-[#B5725A]/25 hover:-translate-y-0.5"
+                  >
+                    {t.hero.ctaPrimary}
+                    <ArrowRight
+                      size={17}
+                      aria-hidden="true"
+                      className="transition-transform duration-300 group-hover:translate-x-1"
+                    />
+                  </button>
 
-              <button
-                onClick={scrollToServices}
-                className="group inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-[#3D3229]/20 text-[#3D3229] font-medium rounded-full hover:border-[#B5725A] hover:text-[#B5725A] transition-all duration-300"
-              >
-                {t.hero.ctaSecondary}
-              </button>
+                  <p className="mt-3 text-sm text-center text-[#3D3229]/65">
+                    {t.hero.ctaDescription}
+                  </p>
+                </div>
+
+                {/* Secondary CTA */}
+                <button
+                  onClick={scrollToServices}
+                  className="group inline-flex items-center justify-center gap-2 px-6 py-3 border border-[#3D3229]/20 text-[#3D3229] text-sm md:text-base font-medium rounded-full hover:border-[#B5725A] hover:text-[#B5725A] transition-all duration-300"
+                >
+                  {t.hero.ctaSecondary}
+                </button>
+              </div>
             </div>
           </div>
 

@@ -116,14 +116,14 @@ export function FlyerExport() {
       });
 
       const pdf = new jsPDF({
-        orientation: 'portrait',
+        orientation: 'landscape',
         unit: 'mm',
-        format: [61, 91],
+        format: [91, 61],
       });
 
-      pdf.addImage(front, 'PNG', 0, 0, 61, 91);
-      pdf.addPage([61, 91], 'portrait');
-      pdf.addImage(back, 'PNG', 0, 0, 61, 91);
+      pdf.addImage(front, 'PNG', 0, 0, 91, 61);
+      pdf.addPage([91, 61], 'landscape');
+      pdf.addImage(back, 'PNG', 0, 0, 91, 61);
 
       pdf.save('Joris-van-Bohemen-Visitenkarte.pdf');
     } catch (error) {
@@ -274,7 +274,7 @@ export function FlyerExport() {
           </h2>
 
           <p className="mt-2 text-[#3D3229]/60">
-            Vorder- und Rückseite · 55 × 85 mm plus
+            Vorder- und Rückseite · 85 x 55 mm plus
             3 mm Beschnitt an jeder Seite.
           </p>
 
@@ -298,8 +298,8 @@ export function FlyerExport() {
             <div
               ref={visitenkarteFrontRef}
               style={{
-                width: '61mm',
-                height: '91mm',
+                width: '91mm',
+                height: '61mm',
                 padding: '3mm',
                 boxSizing: 'border-box',
                 background: '#F5F0E8',
@@ -308,8 +308,8 @@ export function FlyerExport() {
             >
               <div
                 style={{
-                  width: '55mm',
-                  height: '85mm',
+                  width: '85mm',
+                  height: '55mm',
                   overflow: 'hidden',
                 }}
               >
@@ -328,8 +328,8 @@ export function FlyerExport() {
             <div
               ref={visitenkarteBackRef}
               style={{
-                width: '61mm',
-                height: '91mm',
+                width: '91mm',
+                height: '61mm',
                 padding: '3mm',
                 boxSizing: 'border-box',
                 background: '#3D3229',
@@ -338,8 +338,8 @@ export function FlyerExport() {
             >
               <div
                 style={{
-                  width: '55mm',
-                  height: '85mm',
+                  width: '85mm',
+                  height: '55mm',
                   overflow: 'hidden',
                 }}
               >

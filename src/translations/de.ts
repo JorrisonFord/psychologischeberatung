@@ -12,15 +12,16 @@ export const de = {
   title: "Ein Raum für Akzeptanz und persönliche Entwicklung",
   description:
     "Ich unterstütze Sie dabei, einen bewussteren Umgang mit Gedanken und Gefühlen zu entwickeln. Dadurch entsteht mehr innere Flexibilität und die Möglichkeit, das eigene Leben an dem auszurichten, was Ihnen wirklich wichtig ist.",
-  ctaPrimary: "Gespräch vereinbaren",
+  ctaPrimary: "Kostenloses Telefongespräch vereinbaren",
   ctaSecondary: "Mehr erfahren",
+  ctaDescription: "15 Minuten · kostenlos · unverbindlich",
 },
 
   about: {
     title: "Über mich",
     subtitle: "",
     paragraph1:
-    "Ich bin Master-Psychologe mit Schwerpunkt Neuropsychologie und arbeite in meinem psychologischen Coaching auf Grundlage des ACT-Ansatzes (Acceptance & Commitment Therapy). Im Mittelpunkt stehen Akzeptanz innerer Prozesse, psychische Flexibilität und eine werteorientierte Lebensweise.",
+    "Ich bin Master-Psychologe mit Schwerpunkt Neuropsychologie und arbeite in meinem psychologischen Coaching auf Grundlage des ACT-Ansatzes (Acceptance & Commitment Therapie). Im Mittelpunkt stehen Akzeptanz innerer Prozesse, psychische Flexibilität und eine werteorientierte Lebensweise.",
     paragraph2:
     "Ergänzend bringe ich langjährige Erfahrung in Yoga und Achtsamkeit sowie eine erlebnispädagogische Ausbildung in meine Arbeit ein. Ein ganzheitlicher Ansatz, der Körper, Gedanken und Gefühle miteinander verbindet.",
     quote:
@@ -58,7 +59,7 @@ export const de = {
     act: {
       title: "ACT & Wertearbeit",
       description:
-        "Der ACT-Ansatz (Acceptance and Commitment Therapy) unterstützt Sie dabei, Gedanken und Gefühle anzunehmen, ohne sich von ihnen steuern zu lassen. Dadurch entsteht mehr Handlungspielraum und die Möglichkeit, der Mensch zu sein, der Sie wirklich sein möchten.",
+        "Der ACT-Ansatz (Acceptance and Commitment Therapie) unterstützt Sie dabei, Gedanken und Gefühle anzunehmen, ohne sich von ihnen steuern zu lassen. Dadurch entsteht mehr Handlungspielraum und die Möglichkeit, der Mensch zu sein, der Sie wirklich sein möchten.",
     },
   },
 },
@@ -111,17 +112,17 @@ export const de = {
   },
 
  
-    businessCard: {
-      name: "Joris van Bohemen",
-      profession: "Psychologische Beratung",
-      focus: ["ACT · Akzeptanz", "Persönliche Entwicklung"],
-      location: "KÖLN · ONLINE",
-      website: "https://jorisvanbohemen.de",
-      closing: [
-        "Für mehr innere Flexibilität",
-        "und persönliche Entwicklung.",
-      ],
-    },
+  businessCard: {
+    name: "Joris van Bohemen",
+    profession: "Psychologische Beratung\nACT Coaching",
+    focus: ["Achtsamkeit & Yoga"],
+    location: "KÖLN · ONLINE",
+    website: "https://jorisvanbohemen.de",
+    closing: [
+      "Für mehr innere Flexibilität",
+      "und persönliche Entwicklung.",
+    ],
+  },
 
   contact: {
     subtitle: "Kontakt",

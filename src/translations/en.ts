@@ -12,8 +12,9 @@ export const en = {
     title: "A space for acceptance and personal development",
     description:
       "I support you in developing a more conscious relationship with your thoughts and feelings. This creates more inner flexibility and the possibility to align your life with what truly matters to you.",
-    ctaPrimary: "Book a session",
+    ctaPrimary: "Free 15-minute initial consultation",
     ctaSecondary: "Learn more",
+    ctaDescription: "15 minutes · free · no obligation",
   },
 
   about: {

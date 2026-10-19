@@ -1,5 +1,6 @@
 
 import { de } from '../../translations/de';
+
 const C = {
   beige: '#F5F0E8',
   terracotta: '#B5725A',
@@ -7,72 +8,91 @@ const C = {
 };
 
 export function VisitenkarteVorderseite() {
-  const { name, profession, focus, location } = de.businessCard;
+  const { name, profession, location } = de.businessCard;
 
   return (
     <div
-      className="relative flex h-full w-full flex-col justify-between overflow-hidden"
+      className="relative flex h-full w-full items-center overflow-hidden"
       style={{
         background: C.beige,
         color: C.brown,
-        padding: '8mm',
-        fontFamily: 'Georgia, serif',
+        padding: '5mm',
+        boxSizing: 'border-box',
       }}
     >
-      <div className="relative z-10">
-        <h2 className="text-[27pt] leading-[1.05] tracking-tight">
+      {/* Textbereich */}
+      <div className="relative z-10 flex min-w-0 flex-1 flex-col justify-center pr-3">
+        <h2
+          className="text-[19pt] leading-tight tracking-tight"
+          style={{
+            fontFamily: "'Cormorant Garamond', serif",
+            fontWeight: 500,
+            margin: 0,
+          }}
+        >
           {name}
         </h2>
 
         <div
-          className="my-6"
+          aria-hidden="true"
           style={{
-            height: '1.2mm',
-            width: '13mm',
+            height: '0.8mm',
+            width: '10mm',
             background: C.terracotta,
+            marginTop: '3mm',
+            marginBottom: '3mm',
           }}
         />
 
-        <p className="text-[11pt] leading-relaxed">
+        <p
+          className="whitespace-pre-line text-[8.5pt] leading-snug"
+          style={{
+            fontFamily: "'Inter', sans-serif",
+            fontWeight: 400,
+            margin: 0,
+          }}
+        >
           {profession}
         </p>
 
-        <div
-          className="mt-2 text-[8.5pt] leading-relaxed"
-          style={{ fontFamily: 'Arial, sans-serif' }}
-        >
-          {focus.map((item) => (
-            <p key={item}>{item}</p>
-          ))}
-        </div>
-      </div>
-
-      <div className="relative z-10 flex items-end justify-between">
-        <div
-          className="flex h-[23mm] w-[23mm] items-center justify-center overflow-hidden rounded-full"
-          style={{ background: '#E8DDD0' }}
-        >
-          <img
-            src="/images/portrait.jpg"
-            alt=""
-            className="h-full w-full object-cover"
-          />
-        </div>
-
         <p
-          className="pb-1 text-[8pt] tracking-[0.15em]"
-          style={{ fontFamily: 'Arial, sans-serif' }}
+          className="mt-6 text-[7pt] tracking-[0.12em]"
+          style={{
+            fontFamily: "'Inter', sans-serif",
+            fontWeight: 500,
+            marginBottom: 0,
+          }}
         >
           {location}
         </p>
       </div>
 
+      {/* Portrait mit abgerundeten Ecken */}
+      <div
+        className="relative z-10 shrink-0 overflow-hidden"
+        style={{
+          width: '25mm',
+          height: '35mm',
+          borderRadius: '3mm',
+          background: '#E8DDD0',
+        }}
+      >
+        <img
+          src="/images/portrait.jpg"
+          alt=""
+          className="h-full w-full object-cover"
+        />
+      </div>
+
+      {/* Dezenter Terrakotta-Akzent */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -bottom-[15mm] -left-[12mm] h-[43mm] w-[43mm] rounded-full"
+        className="pointer-events-none absolute -bottom-[12mm] -left-[10mm] rounded-full"
         style={{
+          width: '30mm',
+          height: '30mm',
           background: C.terracotta,
-          opacity: 0.85,
+          opacity: 0.18,
         }}
       />
     </div>

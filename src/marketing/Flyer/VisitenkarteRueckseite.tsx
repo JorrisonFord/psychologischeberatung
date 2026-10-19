@@ -1,7 +1,7 @@
 
 import { QRCodeSVG } from 'qrcode.react';
-import { Globe, Mail, MapPin } from 'lucide-react';
-import { de } from '../../translations/de'; // Importpfad ggf. anpassen
+import { Globe, Mail, Phone } from 'lucide-react';
+import { de } from '../../translations/de';
 
 const C = {
   beige: '#F5F0E8',
@@ -10,47 +10,69 @@ const C = {
 };
 
 export function VisitenkarteRueckseite() {
-  const { website, closing } = de.businessCard;
-  const { email, address } = de.contact.details;
+  const { website } = de.businessCard;
+  const { email, phone } = de.contact.details;
 
   return (
     <div
-      className="flex h-full w-full flex-col justify-between overflow-hidden"
+      className="relative flex h-full w-full items-center overflow-hidden"
       style={{
         background: C.brown,
         color: C.beige,
-        padding: '8mm',
-        fontFamily: 'Arial, sans-serif',
+        padding: '5mm',
+        fontFamily: "'Inter', sans-serif",
+        boxSizing: 'border-box',
       }}
     >
-      <div className="space-y-5">
-        <div className="flex items-start gap-3">
-          <Globe size={16} strokeWidth={1.5} />
-          <span className="break-all text-[8.5pt]">
-            {website.replace(/^https?:\/\//, '')}
+      {/* Kontaktdaten links */}
+      <div className="relative z-10 flex min-w-0 flex-1 flex-col justify-center gap-5 pr-3">
+        <div className="flex min-w-0 items-center gap-2">
+          <Globe
+            size={13}
+            strokeWidth={1.5}
+            className="shrink-0"
+          />
+          <span className="break-all text-[8pt] leading-snug">
+            {website.replace(/^https?:\/\//, '').replace(/\/$/, '')}
           </span>
         </div>
 
-        <div className="flex items-start gap-3">
-          <Mail size={16} strokeWidth={1.5} />
-          <span className="break-all text-[8.5pt]">
+        <div className="flex min-w-0 items-center gap-2">
+          <Mail
+            size={13}
+            strokeWidth={1.5}
+            className="shrink-0"
+          />
+          <span className="break-all text-[8pt] leading-snug">
             {email}
           </span>
         </div>
 
-        <div className="flex items-start gap-3">
-          <MapPin size={16} strokeWidth={1.5} />
-          <span className="whitespace-pre-line text-[8.5pt] leading-relaxed">
-            {address.replace(/-/g, '–')}
+        <div className="flex min-w-0 items-center gap-2">
+          <Phone
+            size={13}
+            strokeWidth={1.5}
+            className="shrink-0"
+          />
+          <span className="text-[8pt] leading-snug">
+            {phone}
           </span>
         </div>
       </div>
 
-      <div className="flex flex-col items-start gap-4">
-        <div className="bg-white p-2">
+      {/* QR-Code rechts */}
+      <div className="relative z-10 flex shrink-0 flex-col items-center gap-2">
+        <div
+          className="bg-white p-1.5"
+          style={{
+            boxSizing: 'border-box',
+            borderRadius: '3mm',
+            overflow: 'hidden',
+          }}
+        >
           <QRCodeSVG
             value={website}
-            size={112}
+            size={88}
             level="H"
             bgColor="#FFFFFF"
             fgColor={C.brown}
@@ -58,26 +80,28 @@ export function VisitenkarteRueckseite() {
           />
         </div>
 
-        <div
-          aria-hidden="true"
+        <span
+          className="text-[5.5pt] tracking-[0.08em] text-center leading-snug"
           style={{
-            height: '1.2mm',
-            width: '13mm',
-            background: C.terracotta,
+            color: C.beige,
+            maxWidth: '27mm',
           }}
-        />
-
-        <p
-          className="text-[11pt] italic leading-relaxed"
-          style={{ fontFamily: 'Georgia, serif' }}
         >
-          {closing.map((line) => (
-            <span key={line} className="block">
-              {line}
-            </span>
-          ))}
-        </p>
+          GESPRÄCH ANFRAGEN
+        </span>
       </div>
+
+      {/* Dezenter Terrakotta-Akzent */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -bottom-[12mm] -right-[10mm] rounded-full"
+        style={{
+          width: '30mm',
+          height: '30mm',
+          background: C.terracotta,
+          opacity: 0.2,
+        }}
+      />
     </div>
   );
 }
