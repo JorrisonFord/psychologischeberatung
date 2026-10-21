@@ -98,17 +98,40 @@ export function Footer() {
               </ul>
             </div>
 
+            
+            
             {/* Contact */}
             <div className="md:pl-12">
-              <h3 className="font-medium text-white mb-4">Kontakt</h3>
+              <h3 className="font-medium text-white mb-4">
+                {t.contact.subtitle}
+              </h3>
 
               <div className="space-y-3 text-white/60">
-                <p>Schildergasse 69-73</p>
-                <p>50667 Köln</p>
-                <p className="pt-2">+49 1578 879 4109</p>
-                <p>info@jorisvanbohemen.de</p>
+                <p className="whitespace-pre-line">
+                  {t.contact.details.address}
+                </p>
+
+                <p className="pt-2">
+                  <a
+                    href={`tel:${t.contact.details.phone.replace(/\s/g, '')}`}
+                    className="hover:text-white transition-colors"
+                  >
+                    {t.contact.details.phone}
+                  </a>
+                </p>
+
+                <p>
+                  <a
+                    href={`mailto:${t.contact.details.email}`}
+                    className="hover:text-white transition-colors"
+                  >
+                    {t.contact.details.email}
+                  </a>
+                </p>
               </div>
             </div>
+
+
 
           </div>
         </div>

@@ -42,7 +42,7 @@ export const flyerContent = {
     text: "Mehr erfahren und Termin anfragen:",
     website: "jorisvanbohemen.de",
     email: "info@jorisvanbohemen.de",
-    phone: "+49 1578 879 4109",
+    phone: "+49 177 2012445",
   },
 
   footer: {
