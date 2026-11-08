@@ -25,7 +25,7 @@ export function FlyerA4() {
             {flyerContent.name}
           </p>
 
-          <p className="mt-[12px] text-[55px] text-[#3D3229]/50 tracking-wide">
+          <p className="mt-[12px] text-[55px] text-[#3D3229]/75 tracking-wide">
             {flyerContent.subtitle}
           </p>
         </header>
@@ -39,7 +39,7 @@ export function FlyerA4() {
               {flyerContent.hero.title}
             </h1>
 
-            <div className="mt-[48px] space-y-[34px] text-[55px] leading-[1.3] text-[#3D3229]/70">
+            <div className="mt-[48px] space-y-[34px] text-[55px] leading-[1.3] text-[#3D3229]/85">
               {flyerContent.hero.points.map((point) => (
                 <div
                   key={point}
@@ -67,18 +67,18 @@ export function FlyerA4() {
         </div>
 
         {/* Intro */}
-        <div className="mt-[150px] max-w-[1750px] mx-auto text-center">
+        <div className="mt-[130px] max-w-[1750px] mx-auto text-center">
           <p className="font-serif text-[110px] leading-[1.15] whitespace-pre-line">
             {flyerContent.intro.title}
           </p>
 
-          <p className="mt-[50px] text-[55px] leading-[1.55] text-[#3D3229]/70">
+          <p className="mt-[50px] text-[55px] leading-[1.55] text-[#3D3229]/85">
             {flyerContent.intro.text}
           </p>
         </div>
 
         {/* Offers */}
-        <div className="mt-[90px] space-y-[28px]">
+        <div className="mt-[75px] space-y-[28px]">
 
           {/* Free call */}
           <div className="bg-white rounded-[38px] px-[60px] py-[45px] shadow-sm">
@@ -90,7 +90,7 @@ export function FlyerA4() {
               {flyerContent.offers.intro.title}
             </p>
 
-            <p className="mt-[10px] text-[40px] text-[#3D3229]/60">
+            <p className="mt-[10px] text-[40px] text-[#3D3229]/85">
               {flyerContent.offers.intro.text}
             </p>
           </div>
@@ -106,7 +106,7 @@ export function FlyerA4() {
                 {flyerContent.offers.sessions.title}
               </p>
 
-              <p className="mt-[10px] text-[40px] leading-[1.45] text-[#3D3229]/60">
+              <p className="mt-[10px] text-[40px] leading-[1.45] text-[#3D3229]/85">
                 {flyerContent.offers.sessions.duration}
                 {' · '}
                 {flyerContent.offers.sessions.location}
@@ -120,7 +120,7 @@ export function FlyerA4() {
                 {flyerContent.offers.sessions.price}
               </p>
 
-              <p className="mt-[10px] text-[40px] text-[#3D3229]/60">
+              <p className="mt-[10px] text-[40px] text-[#3D3229]/85">
                 {flyerContent.offers.sessions.priceNote}
               </p>
             </div>
@@ -128,7 +128,7 @@ export function FlyerA4() {
         </div>
 
         {/* Contact */}
-        <div className="mt-auto pt-[100px]">
+        <div className="mt-auto pt-[75px]">
 
           <div className="h-px bg-[#3D3229]/10 mb-[65px]" />
 
@@ -140,7 +140,7 @@ export function FlyerA4() {
                 {flyerContent.contact.title}
               </p>
 
-              <p className="mt-[14px] text-[40px] leading-relaxed text-[#3D3229]/70">
+              <p className="mt-[14px] text-[40px] leading-relaxed text-[#3D3229]/85">
                 {flyerContent.contact.text}
               </p>
 
@@ -168,18 +168,17 @@ export function FlyerA4() {
               >
                 <QRCodeSVG
                   value="https://jorisvanbohemen.de"
-                  size={280}
+                  size={330}
                   level="H"
                   bgColor="#FFFFFF"
                   fgColor="#3D3229"
                   title="Website von Joris van Bohemen"
                 />
               </div>
-
             </div>
 
             {/* Contact details */}
-            <div className="ml-[70px] flex flex-col gap-[28px] text-[55px] text-[#3D3229]/65 min-w-0">
+            <div className="ml-[70px] flex flex-col gap-[28px] text-[55px] text-[#3D3229]/85 min-w-0">
               <div className="flex items-center gap-[20px]">
                 <Mail
                   size={40}
@@ -205,8 +204,8 @@ export function FlyerA4() {
           </div>
 
           {/* Footer */}
-          <div className="mt-[70px] pt-[30px] border-t border-[#3D3229]/10 text-center">
-            <p className="text-[30px] text-[#3D3229]/50">
+          <div className="mt-[50px] pt-[20px] border-t border-[#3D3229]/10 text-center">
+            <p className="text-[30px] text-[#3D3229]/70">
               {flyerContent.name}
               {' · '}
               {flyerContent.subtitle}
