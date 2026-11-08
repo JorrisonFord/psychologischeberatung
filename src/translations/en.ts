@@ -12,7 +12,7 @@ export const en = {
     title: "Difficult decisions?\nRumination?\nSelf-doubt?",
     description:
       "You don't need to become stronger – your thoughts and feelings can feel lighter. I support you in developing a way of dealing with your inner processes and doing what truly matters to you.",
-    ctaPrimary: "Free 15-minute initial consultation",
+    ctaPrimary: "Schedule a call",
     ctaSecondary: "Learn more",
     ctaDescription: "15 minutes · free · no obligation",
   },

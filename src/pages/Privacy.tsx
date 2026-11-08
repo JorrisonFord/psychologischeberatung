@@ -1,7 +1,11 @@
+
 import { useLanguage } from "../context/LanguageContext";
+import { de } from "../translations/de";
 
 export function Privacy() {
   const { language } = useLanguage();
+
+  const { address, phone, email } = de.contact.details;
 
   return (
     <main className="bg-[#F5F0E8] min-h-screen">
@@ -30,17 +34,16 @@ export function Privacy() {
                   1. Verantwortlicher
                 </h2>
 
-               <p className="whitespace-pre-line">
-  {`Verantwortlich für die Verarbeitung personenbezogener Daten auf dieser Website ist:
+                <p className="whitespace-pre-line">
+                  {`Verantwortlich für die Verarbeitung personenbezogener Daten auf dieser Website ist:
 
 Joris van Bohemen
-Schildergasse 69–73
-50667 Köln
+${address}
 Deutschland
 
-E-Mail: info@jorisvanbohemen.de
-Telefon: +49 1578 879 4109`}
-</p>
+E-Mail: ${email}
+Telefon: ${phone}`}
+                </p>
               </section>
 
               {/* Allgemeine Hinweise */}
@@ -319,16 +322,15 @@ Telefon: +49 1578 879 4109`}
                 </h2>
 
                 <p className="whitespace-pre-line">
-                    {`The controller responsible for the processing of personal data on this website is:
+                  {`The controller responsible for the processing of personal data on this website is:
 
-                    Joris van Bohemen
-                    Schildergasse 69–73
-                    50667 Cologne
-                    Germany
+Joris van Bohemen
+${address}
+Germany
 
-                    Email: info@jorisvanbohemen.de
-                    Phone: +49 1578 879 4109`}
-                    </p>
+Email: ${email}
+Phone: ${phone}`}
+                </p>
               </section>
 
               <section>

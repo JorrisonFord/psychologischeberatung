@@ -1,7 +1,12 @@
+
 import { useLanguage } from "../context/LanguageContext";
+import { de } from "../translations/de";
 
 export function Imprint() {
   const { language } = useLanguage();
+
+  const { address, phone, email } = de.contact.details;
+  const name = de.businessCard.name;
 
   return (
     <main className="bg-[#F5F0E8] min-h-screen">
@@ -29,10 +34,7 @@ export function Imprint() {
                 </h2>
 
                 <p className="whitespace-pre-line">
-                  {`Joris van Bohemen
-Schildergasse 69–73
-50667 Köln
-Deutschland`}
+                  {`${name}\n${address}\nDeutschland`}
                 </p>
               </section>
 
@@ -43,8 +45,7 @@ Deutschland`}
                 </h2>
 
                 <p className="whitespace-pre-line">
-                  {`Telefon: +49 1578 879 4109
-E-Mail: info@jorisvanbohemen.de`}
+                  {`Telefon: ${phone}\nE-Mail: ${email}`}
                 </p>
               </section>
 
@@ -85,19 +86,15 @@ E-Mail: info@jorisvanbohemen.de`}
                   Verantwortlich für den Inhalt
                 </h2>
 
-                <p>
-                  Joris van Bohemen
-                </p>
+                <p>{name}</p>
 
                 <p className="mt-4 whitespace-pre-line">
-                  {`Schildergasse 69–73
-50667 Köln
-Deutschland`}
+                  {`${address}\nDeutschland`}
                 </p>
               </section>
 
               <p className="pt-4 text-sm text-[#3D3229]/50">
-                Stand: September 2026
+                Stand: November 2026
               </p>
 
             </div>
@@ -111,10 +108,7 @@ Deutschland`}
                 </h2>
 
                 <p className="whitespace-pre-line">
-                  {`Joris van Bohemen
-Schildergasse 69–73
-50667 Cologne
-Germany`}
+                  {`${name}\n${address}\nGermany`}
                 </p>
               </section>
 
@@ -125,8 +119,7 @@ Germany`}
                 </h2>
 
                 <p className="whitespace-pre-line">
-                  {`Phone: +49 1578 879 4109
-Email: info@jorisvanbohemen.de`}
+                  {`Phone: ${phone}\nEmail: ${email}`}
                 </p>
               </section>
 
@@ -166,19 +159,15 @@ Email: info@jorisvanbohemen.de`}
                   Responsible for content
                 </h2>
 
-                <p>
-                  Joris van Bohemen
-                </p>
+                <p>{name}</p>
 
                 <p className="mt-4 whitespace-pre-line">
-                  {`Schildergasse 69–73
-50667 Cologne
-Germany`}
+                  {`${address}\nGermany`}
                 </p>
               </section>
 
               <p className="pt-4 text-sm text-[#3D3229]/50">
-                Last updated: September 2026
+                Last updated: November 2026
               </p>
 
             </div>

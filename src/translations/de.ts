@@ -11,7 +11,7 @@ export const de = {
   subtitle: "Psychologische Beratung | ACT Coaching",
   title: "Schwere Entscheidungen? Gedankenkreisen? Selbstzweifel?",
   description: "Sie müssen nicht stärker werden – Ihre Gedanken und Gefühle können sich leichter anfühlen. Ich unterstütze Sie dabei, einen Umgang mit Ihren inneren Prozessen zu entwickeln und das zu tun, was Ihnen wirklich wichtig ist.",
-  ctaPrimary: "Kostenloses Telefongespräch vereinbaren",
+  ctaPrimary: "Telefongespräch vereinbaren",
   ctaSecondary: "Mehr erfahren",
   ctaDescription: "15 Minuten · kostenlos · unverbindlich",
   },

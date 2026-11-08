@@ -1,3 +1,4 @@
+
 import { useLanguage } from '../context/LanguageContext';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
@@ -73,7 +74,7 @@ export function Footer() {
                 }}
               >
                 Joris van Bohemen
-                </a>
+              </a>
 
               <p className="text-white/60 leading-relaxed max-w-sm whitespace-pre-line">
                 {t.footer.tagline}
@@ -98,8 +99,6 @@ export function Footer() {
               </ul>
             </div>
 
-            
-            
             {/* Contact */}
             <div className="md:pl-12">
               <h3 className="font-medium text-white mb-4">
@@ -108,7 +107,14 @@ export function Footer() {
 
               <div className="space-y-3 text-white/60">
                 <p className="whitespace-pre-line">
-                  {t.contact.details.address}
+                  <a
+                    href="https://maps.app.goo.gl/fC4sEzWpnexCQ8vf8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors"
+                  >
+                    {t.contact.details.address}
+                  </a>
                 </p>
 
                 <p className="pt-2">
@@ -131,8 +137,6 @@ export function Footer() {
               </div>
             </div>
 
-
-
           </div>
         </div>
 
@@ -143,7 +147,6 @@ export function Footer() {
 
               <p className="text-white/40 text-sm flex items-center gap-2">
                 {t.footer.copyright}
-                
               </p>
 
               <div className="flex items-center gap-6">
