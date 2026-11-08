@@ -1,4 +1,3 @@
-
 import { de } from '../../translations/de';
 
 const C = {
@@ -12,18 +11,19 @@ export function VisitenkarteVorderseite() {
 
   return (
     <div
-      className="relative flex h-full w-full items-center overflow-hidden"
+      className="relative flex h-full w-full items-center justify-center overflow-hidden"
       style={{
         background: C.beige,
         color: C.brown,
-        padding: '5mm',
+        padding: '5.5mm',
         boxSizing: 'border-box',
       }}
     >
-      {/* Textbereich */}
-      <div className="relative z-10 flex min-w-0 flex-1 flex-col justify-center pr-3">
+      {/* Zentrierter Textbereich */}
+      <div className="relative z-10 flex w-full flex-col items-center justify-center text-center">
+        {/* Name */}
         <h2
-          className="text-[19pt] leading-tight tracking-tight"
+          className="text-[20pt] leading-tight tracking-tight"
           style={{
             fontFamily: "'Cormorant Garamond', serif",
             fontWeight: 500,
@@ -33,33 +33,38 @@ export function VisitenkarteVorderseite() {
           {name}
         </h2>
 
+        {/* Terrakotta-Trennlinie */}
         <div
-          aria-hidden="true"
-          style={{
-            height: '0.8mm',
-            width: '10mm',
-            background: C.terracotta,
-            marginTop: '3mm',
-            marginBottom: '3mm',
-          }}
+        aria-hidden="true"
+        style={{
+          height: '0.8mm',
+          width: '10mm',
+          background: C.terracotta,
+          marginTop: '3mm',
+          marginBottom: '3.5mm',
+        }}    
         />
 
+        {/* Berufsbezeichnung */}
         <p
-          className="whitespace-pre-line text-[8.5pt] leading-snug"
+          className="whitespace-pre-line text-[10pt] leading-[1.45]"
           style={{
             fontFamily: "'Inter', sans-serif",
             fontWeight: 400,
+            letterSpacing: '0.015em',
             margin: 0,
           }}
         >
           {profession}
         </p>
 
+        {/* Standort */}
         <p
-          className="mt-6 text-[7pt] tracking-[0.12em]"
+          className="text-[8pt] tracking-[0.12em]"
           style={{
             fontFamily: "'Inter', sans-serif",
             fontWeight: 500,
+            marginTop: '6mm',
             marginBottom: 0,
           }}
         >
@@ -67,34 +72,8 @@ export function VisitenkarteVorderseite() {
         </p>
       </div>
 
-      {/* Portrait mit abgerundeten Ecken */}
-      <div
-        className="relative z-10 shrink-0 overflow-hidden"
-        style={{
-          width: '25mm',
-          height: '35mm',
-          borderRadius: '3mm',
-          background: '#E8DDD0',
-        }}
-      >
-        <img
-          src="/images/portrait.jpg"
-          alt=""
-          className="h-full w-full object-cover"
-        />
-      </div>
-
-      {/* Dezenter Terrakotta-Akzent */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -bottom-[12mm] -left-[10mm] rounded-full"
-        style={{
-          width: '30mm',
-          height: '30mm',
-          background: C.terracotta,
-          opacity: 0.18,
-        }}
-      />
+      
+      
     </div>
   );
 }

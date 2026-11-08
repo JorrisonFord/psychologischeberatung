@@ -19,49 +19,46 @@ export function VisitenkarteRueckseite() {
       style={{
         background: C.brown,
         color: C.beige,
-        padding: '5mm',
+        padding: '5.5mm',
         fontFamily: "'Inter', sans-serif",
         boxSizing: 'border-box',
       }}
     >
-      {/* Kontaktdaten links */}
-      <div className="relative z-10 flex min-w-0 flex-1 flex-col justify-center gap-5 pr-3">
-        <div className="flex min-w-0 items-center gap-2">
-          <Globe
-            size={13}
-            strokeWidth={1.5}
-            className="shrink-0"
-          />
-          <span className="break-all text-[8pt] leading-snug">
-            {website.replace(/^https?:\/\//, '').replace(/\/$/, '')}
-          </span>
-        </div>
-
-        <div className="flex min-w-0 items-center gap-2">
-          <Mail
-            size={13}
-            strokeWidth={1.5}
-            className="shrink-0"
-          />
-          <span className="break-all text-[8pt] leading-snug">
-            {email}
-          </span>
-        </div>
-
-        <div className="flex min-w-0 items-center gap-2">
-          <Phone
-            size={13}
-            strokeWidth={1.5}
-            className="shrink-0"
-          />
-          <span className="text-[8pt] leading-snug">
-            {phone}
-          </span>
-        </div>
+   {/* Kontaktdaten links */}
+    <div className="relative z-10 flex min-w-0 flex-1 flex-col justify-center gap-5 pr-3">
+      <div className="flex min-w-0 items-center gap-2">
+        <Globe size={14} strokeWidth={1.5} className="shrink-0" />
+        <span
+          className="break-all text-[9pt] leading-relaxed"
+          style={{ fontWeight: 400 }}
+        >
+          {website.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+        </span>
       </div>
 
+      <div className="flex min-w-0 items-center gap-2">
+        <Mail size={14} strokeWidth={1.5} className="shrink-0" />
+        <span
+          className="break-all text-[9pt] leading-relaxed"
+          style={{ fontWeight: 400 }}
+        >
+          {email}
+        </span>
+      </div>
+
+      <div className="flex min-w-0 items-center gap-2">
+        <Phone size={14} strokeWidth={1.5} className="shrink-0" />
+        <span
+          className="text-[9pt] leading-relaxed"
+          style={{ fontWeight: 400 }}
+        >
+          {phone}
+        </span>
+      </div>
+    </div>
+
       {/* QR-Code rechts */}
-      <div className="relative z-10 flex shrink-0 flex-col items-center gap-2">
+      <div className="flex shrink-0 items-center justify-center">
         <div
           className="bg-white p-1.5"
           style={{
@@ -72,26 +69,28 @@ export function VisitenkarteRueckseite() {
         >
           <QRCodeSVG
             value={website}
-            size={88}
+            size={80}
             level="H"
             bgColor="#FFFFFF"
             fgColor={C.brown}
             title="Website von Joris van Bohemen"
           />
         </div>
-
-        <span
-          className="text-[5.5pt] tracking-[0.08em] text-center leading-snug"
-          style={{
-            color: C.beige,
-            maxWidth: '27mm',
-          }}
-        >
-          GESPRÄCH ANFRAGEN
-        </span>
       </div>
 
-      {/* Dezenter Terrakotta-Akzent */}
+      {/* Dekorativer Kreis links oben */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-[12mm] -left-[10mm] rounded-full"
+        style={{
+          width: '30mm',
+          height: '30mm',
+          background: C.terracotta,
+          opacity: 0.14,
+        }}
+      />
+
+      {/* Dekorativer Kreis rechts unten */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -bottom-[12mm] -right-[10mm] rounded-full"
@@ -99,7 +98,7 @@ export function VisitenkarteRueckseite() {
           width: '30mm',
           height: '30mm',
           background: C.terracotta,
-          opacity: 0.2,
+          opacity: 0.14,
         }}
       />
     </div>

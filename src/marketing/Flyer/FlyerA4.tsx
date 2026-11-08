@@ -1,3 +1,5 @@
+
+import { QRCodeSVG } from 'qrcode.react';
 import { Mail, Phone, Globe } from 'lucide-react';
 import { flyerContent } from '../content';
 
@@ -10,58 +12,48 @@ export function FlyerA4() {
         height: '3508px',
       }}
     >
-
       {/* Background decoration */}
       <div className="absolute -top-60 -right-60 w-[900px] h-[900px] rounded-full bg-[#E8DDD0]/70" />
       <div className="absolute bottom-[-260px] -left-60 w-[800px] h-[800px] rounded-full bg-[#B5725A]/10" />
-
 
       {/* Main content */}
       <div className="relative z-10 h-full flex flex-col px-[300px] py-[150px]">
 
         {/* Header */}
         <header>
-          <p className="font-serif text-[90px] tracking-tight leading-tight">
+          <p className="font-serif text-[110px] tracking-tight leading-tight">
             {flyerContent.name}
           </p>
 
-          <p className="mt-[12px] text-[38px] text-[#3D3229]/50 tracking-wide">
+          <p className="mt-[12px] text-[55px] text-[#3D3229]/50 tracking-wide">
             {flyerContent.subtitle}
           </p>
         </header>
-
 
         {/* Hero */}
         <div className="mt-[120px] grid grid-cols-[1fr_600px] gap-[80px] items-center">
 
           {/* Text */}
           <div>
-
-            <h1 className="font-serif text-[106px] leading-[1.08]">
+            <h1 className="font-serif text-[110px] leading-[1.08]">
               {flyerContent.hero.title}
             </h1>
 
-            <div className="mt-[48px] space-y-[34px] text-[46px] leading-[1.3] text-[#3D3229]/70">
-
+            <div className="mt-[48px] space-y-[34px] text-[55px] leading-[1.3] text-[#3D3229]/70">
               {flyerContent.hero.points.map((point) => (
                 <div
                   key={point}
                   className="flex items-start gap-[22px]"
                 >
                   <span className="text-[#B5725A]">•</span>
-
                   <span>{point}</span>
                 </div>
               ))}
-
             </div>
-
           </div>
-
 
           {/* Portrait */}
           <div className="relative">
-
             <div className="relative rounded-[42px] overflow-hidden shadow-xl aspect-[4/5]">
               <img
                 src="/images/portrait.jpg"
@@ -71,177 +63,158 @@ export function FlyerA4() {
             </div>
 
             <div className="absolute -bottom-[35px] -right-[35px] w-[150px] h-[150px] rounded-full bg-[#B5725A]/15 -z-10" />
-
           </div>
-
         </div>
-
 
         {/* Intro */}
         <div className="mt-[150px] max-w-[1750px] mx-auto text-center">
-
-          <p className="font-serif text-[106px] leading-[1.15] whitespace-pre-line">
+          <p className="font-serif text-[110px] leading-[1.15] whitespace-pre-line">
             {flyerContent.intro.title}
           </p>
 
-          <p className="mt-[50px] text-[43px] leading-[1.55] text-[#3D3229]/70">
+          <p className="mt-[50px] text-[55px] leading-[1.55] text-[#3D3229]/70">
             {flyerContent.intro.text}
           </p>
-
         </div>
-
 
         {/* Offers */}
         <div className="mt-[90px] space-y-[28px]">
 
           {/* Free call */}
           <div className="bg-white rounded-[38px] px-[60px] py-[45px] shadow-sm">
-
-            <p className="text-[28px] font-medium tracking-wider text-[#B5725A] uppercase">
+            <p className="text-[40px] font-medium tracking-wider text-[#B5725A] uppercase">
               {flyerContent.offers.intro.label}
             </p>
 
-            <p className="mt-[12px] text-[50px] font-medium">
+            <p className="mt-[12px] text-[60px] font-medium">
               {flyerContent.offers.intro.title}
             </p>
 
-            <p className="mt-[10px] text-[36px] text-[#3D3229]/60">
+            <p className="mt-[10px] text-[40px] text-[#3D3229]/60">
               {flyerContent.offers.intro.text}
             </p>
-
           </div>
-
 
           {/* Sessions */}
           <div className="bg-white rounded-[38px] px-[60px] py-[45px] shadow-sm flex items-center justify-between">
-
             <div>
-
-              <p className="text-[28px] font-medium tracking-wider text-[#B5725A] uppercase">
+              <p className="text-[40px] font-medium tracking-wider text-[#B5725A] uppercase">
                 {flyerContent.offers.sessions.label}
               </p>
 
-              <p className="mt-[12px] text-[50px] font-medium">
+              <p className="mt-[12px] text-[60px] font-medium">
                 {flyerContent.offers.sessions.title}
               </p>
 
-              <p className="mt-[10px] text-[36px] leading-[1.45] text-[#3D3229]/60">
+              <p className="mt-[10px] text-[40px] leading-[1.45] text-[#3D3229]/60">
                 {flyerContent.offers.sessions.duration}
-                {" · "}
+                {' · '}
                 {flyerContent.offers.sessions.location}
                 <br />
                 {flyerContent.offers.sessions.online}
               </p>
-
             </div>
 
-
             <div className="text-right shrink-0">
-
-              <p className="font-serif text-[96px] leading-none">
+              <p className="font-serif text-[106px] leading-none">
                 {flyerContent.offers.sessions.price}
               </p>
 
-              <p className="mt-[10px] text-[28px] text-[#3D3229]/60">
+              <p className="mt-[10px] text-[40px] text-[#3D3229]/60">
                 {flyerContent.offers.sessions.priceNote}
               </p>
-
             </div>
-
           </div>
-
         </div>
 
-
         {/* Contact */}
-        <div className="mt-auto pt-[75px]">
+        <div className="mt-auto pt-[100px]">
 
-          <div className="h-px bg-[#3D3229]/10 mb-[45px]" />
+          <div className="h-px bg-[#3D3229]/10 mb-[65px]" />
 
-
-          <div className="flex justify-between items-end gap-16">
+          <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-[60px]">
 
             {/* Website */}
-            <div>
-
-              <p className="font-serif text-[62px]">
+            <div className="min-w-0">
+              <p className="font-serif text-[80px] leading-tight">
                 {flyerContent.contact.title}
               </p>
 
-              <p className="mt-[10px] text-[35px] text-[#3D3229]/70">
+              <p className="mt-[14px] text-[40px] leading-relaxed text-[#3D3229]/70">
                 {flyerContent.contact.text}
               </p>
 
-              <div className="mt-[20px] flex items-center gap-[15px]">
-
+              <div className="mt-[28px] flex items-center gap-[18px]">
                 <Globe
-                  size={34}
-                  className="text-[#B5725A]"
+                  size={42}
+                  className="text-[#B5725A] shrink-0"
                 />
 
-                <span className="text-[42px]">
+                <span className="text-[55px] break-words">
                   {flyerContent.contact.website}
                 </span>
+              </div>
+            </div>
 
+            {/* QR-Code */}
+            <div className="relative z-10 flex shrink-0 flex-col items-center gap-[18px]">
+              <div
+                className="bg-white p-[30px]"
+                style={{
+                  boxSizing: 'border-box',
+                  borderRadius: '18px',
+                  overflow: 'hidden',
+                }}
+              >
+                <QRCodeSVG
+                  value="https://jorisvanbohemen.de"
+                  size={280}
+                  level="H"
+                  bgColor="#FFFFFF"
+                  fgColor="#3D3229"
+                  title="Website von Joris van Bohemen"
+                />
               </div>
 
             </div>
-
 
             {/* Contact details */}
-            <div className="flex flex-col gap-[16px] text-[34px] text-[#3D3229]/65">
-
-              <div className="flex items-center gap-4">
-
+            <div className="ml-[70px] flex flex-col gap-[28px] text-[55px] text-[#3D3229]/65 min-w-0">
+              <div className="flex items-center gap-[20px]">
                 <Mail
-                  size={30}
-                  className="text-[#B5725A]"
+                  size={40}
+                  className="text-[#B5725A] shrink-0"
                 />
 
-                <span>
+                <span className="break-words">
                   {flyerContent.contact.email}
                 </span>
-
               </div>
 
-
-              <div className="flex items-center gap-4">
-
+              <div className="flex items-center gap-[20px]">
                 <Phone
-                  size={30}
-                  className="text-[#B5725A]"
+                  size={40}
+                  className="text-[#B5725A] shrink-0"
                 />
 
-                <span>
+                <span className="break-words">
                   {flyerContent.contact.phone}
                 </span>
-
               </div>
-
             </div>
-
           </div>
-
 
           {/* Footer */}
-          <div className="mt-[55px] pt-[25px] border-t border-[#3D3229]/10 text-center">
-
-            <p className="text-[28px] text-[#3D3229]/50">
+          <div className="mt-[70px] pt-[30px] border-t border-[#3D3229]/10 text-center">
+            <p className="text-[30px] text-[#3D3229]/50">
               {flyerContent.name}
-              &nbsp; · &nbsp;
+              {' · '}
               {flyerContent.subtitle}
-              &nbsp; · &nbsp;
+              {' · '}
               {flyerContent.footer.location}
             </p>
-
-            <p className="mt-[7px] text-[28px] text-[#3D3229]/45">
-              {flyerContent.footer.subtitle}
-            </p>
-
           </div>
-
         </div>
-
       </div>
     </div>
   );

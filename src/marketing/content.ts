@@ -47,6 +47,6 @@ export const flyerContent = {
 
   footer: {
     subtitle: "Für mehr innere Flexibilität und persönliche Entwicklung",
-    location: "Köln",
+    location: "KÖLN · ONLINE",
   },
 };
