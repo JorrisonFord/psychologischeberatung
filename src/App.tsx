@@ -25,12 +25,6 @@ import { ACTWertearbeit } from './pages/services/ActWertearbeit';
 import { Privacy } from './pages/Privacy';
 import { Imprint } from './pages/Imprint';
 
-import { FlyerA5 } from './marketing/Flyer/FlyerA5';
-import { FlyerA4 } from './marketing/Flyer/FlyerA4';
-import { FlyerMobileScroll } from './marketing/Flyer/FlyerMobileScroll';
-import { FlyerStory } from './marketing/Flyer/FlyerStory';
-import { FlyerExport } from './marketing/FlyerExport';
-
 function HomePage() {
   return (
     <>
@@ -138,33 +132,7 @@ function App() {
                 </MainLayout>
               }
             />
-
-           {/* FLYER */}
-            <Route
-              path="/flyer-A4"
-              element={<FlyerA4 />}
-            />
-
-            <Route
-              path="/flyer-A5"
-              element={<FlyerA5 />}
-            />
-
-            <Route
-              path="/flyer-mobile"
-              element={<FlyerMobileScroll />}
-            />
-
-            <Route
-              path="/flyer-story"
-              element={<FlyerStory />}
-            />
-
-            <Route
-              path="/flyer-export"
-              element={<FlyerExport />}
-            />
-
+            
           </Routes>
         </BrowserRouter>
         <Analytics />
