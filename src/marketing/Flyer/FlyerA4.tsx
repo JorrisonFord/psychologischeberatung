@@ -134,15 +134,6 @@ export function FlyerA4() {
 
           <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-[60px]">
 
-            {/* Website */}
-            <div className="min-w-0">
-              <p className="font-serif text-[80px] leading-tight">
-                {flyerContent.contact.title}
-              </p>
-
-              <p className="mt-[14px] text-[40px] leading-relaxed text-[#3D3229]/85">
-                {flyerContent.contact.text}
-              </p>
 
               <div className="mt-[28px] flex items-center gap-[18px]">
                 <Globe
@@ -215,6 +206,5 @@ export function FlyerA4() {
           </div>
         </div>
       </div>
-    </div>
   );
 }

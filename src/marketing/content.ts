@@ -1,34 +1,36 @@
+
 export const flyerContent = {
   name: "Joris van Bohemen",
   subtitle: "Psychologische Beratung | ACT Coaching",
 
   hero: {
-    title: "Kennen Sie das?",
+    title: "Viel Verantwortung, Viel im Kopf",
+    subtitle: "– und trotzdem das Gefühl, nicht weiterzukommen?",
     points: [
-      "Herausfordernde Lebenssituationen",
-      "Schwere Entscheidungen",
-      "Sorgen und kreisende Gedanken",
-      "Selbstzweifel und Unsicherheit",
-      "Zwischenmenschliche Konflikte",
-      "Das Gefühl, nicht weiterzukommen",
+      "Nicht abschalten können",
+      "Sich selbst unter Druck setzen",
+      "In Gedanken feststecken",
+      "Entscheidungen fallen schwer",
     ],
   },
 
   intro: {
-    title: "Damit müssen Sie nicht allein bleiben.",
-    text: "Manchmal gibt es eine konkrete Situation, die uns beschäftigt und bei der wir alleine nicht richtig weiterkommen. In meiner Beratung können Sie Ihre Situation in Ruhe sortieren, neue Perspektiven entwickeln und konkrete nächste Schritte finden.",
+    title: "Mehr Selbstoptimierung ist sicher nicht die Lösung.",
+    text: "In meiner psychologischen Beratung sortieren wir, was Sie bewegt. \nSie lernen, gelassener mit Herausforderungen umzugehen und Ihren eigenen Weg selbstbestimmt zu gestalten.",
   },
 
   offers: {
     intro: {
       label: "Zum Kennenlernen",
-      title: "Kostenloses 15-minütiges Telefonat",
-      text: "Unverbindlich kennenlernen und erste Fragen klären.",
+      title: "Kostenloses Erstgespräch",
+      duration: "15 Minuten",
+      format: "Telefon oder Videocall",
+      text: "Unverbindlich und kostenlos",
     },
 
     sessions: {
       label: "Für Ihr Anliegen",
-      title: "Einzelsitzungen",
+      title: "Einzelsitzung",
       duration: "50 Minuten",
       location: "Praxis in der Schildergasse, Köln",
       online: "Auch online möglich",
@@ -38,15 +40,13 @@ export const flyerContent = {
   },
 
   contact: {
-    title: "Interesse?",
-    text: "Mehr erfahren und Termin anfragen:",
     website: "jorisvanbohemen.de",
     email: "info@jorisvanbohemen.de",
     phone: "+49 177 2012445",
   },
 
   footer: {
-    subtitle: "Für mehr innere Flexibilität und persönliche Entwicklung",
+    subtitle: "Joris van Bohemen · Psychologische Beratung | ACT Coaching",
     location: "KÖLN · ONLINE",
   },
 };

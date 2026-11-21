@@ -3,6 +3,7 @@ import { useRef, useState } from 'react';
 import { toPng } from 'html-to-image';
 import jsPDF from 'jspdf';
 
+import { FlyerA5 } from './Flyer/FlyerA5';
 import { FlyerA4 } from './Flyer/FlyerA4';
 import { FlyerStory } from './Flyer/FlyerStory';
 import { FlyerMobileScroll } from './Flyer/FlyerMobileScroll';
@@ -13,6 +14,10 @@ import { VisitenkarteRueckseite } from './Flyer/VisitenkarteRueckseite';
 // EXPORT SETTINGS
 // --------------------------------------------------
 
+// Die Flyer-Komponente ist im A5-Hochformat angelegt.
+// A4 wird für den Export proportional hochskaliert.
+const A5_WIDTH = 1748;
+const A5_HEIGHT = 2480;
 const A4_WIDTH = 2480;
 const A4_HEIGHT = 3508;
 
@@ -32,7 +37,7 @@ const CARD_PDF_HEIGHT = CARD_HEIGHT + CARD_BLEED * 2; // 59 mm
 // --------------------------------------------------
 
 export function FlyerExport() {
-  const a4Ref = useRef<HTMLDivElement>(null);
+  const flyerRef = useRef<HTMLDivElement>(null);
   const storyRef = useRef<HTMLDivElement>(null);
   const mobileScrollRef = useRef<HTMLDivElement>(null);
   const visitenkarteFrontRef = useRef<HTMLDivElement>(null);
@@ -115,6 +120,77 @@ export function FlyerExport() {
   };
 
   // --------------------------------------------------
+  // CREATE FLYER IMAGE (A4 / A5)
+  // --------------------------------------------------
+
+  const createFlyerPng = async (
+    element: HTMLDivElement,
+    format: 'A4' | 'A5',
+  ) => {
+    await prepareElement(element);
+
+    const targetWidth = format === 'A4' ? A4_WIDTH : A5_WIDTH;
+    const targetHeight = format === 'A4' ? A4_HEIGHT : A5_HEIGHT;
+
+    // A4 wird aus dem A5-Layout hochauflösend skaliert.
+    const scale = targetHeight / A5_HEIGHT;
+
+    const sourceDataUrl = await toPng(element, {
+      // Die Exportfläche explizit auf das jeweilige Masterformat setzen.
+      // Dadurch übernimmt html-to-image keine abweichenden Layoutmaße
+      // oder Offsets aus dem umgebenden Preview-Container.
+      width: A5_WIDTH,
+      height: A5_HEIGHT,
+      canvasWidth: A5_WIDTH,
+      canvasHeight: A5_HEIGHT,
+      pixelRatio: scale,
+      cacheBust: true,
+      backgroundColor: BACKGROUND_LIGHT,
+      style: {
+        width: `${A5_WIDTH}px`,
+        height: `${A5_HEIGHT}px`,
+        minWidth: `${A5_WIDTH}px`,
+        minHeight: `${A5_HEIGHT}px`,
+        margin: '0',
+        transform: 'none',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        boxSizing: 'border-box',
+      },
+    });
+
+    // Auf die exakten Pixelmaße des jeweiligen Papierformats bringen.
+    // So stimmen PNG-Abmessungen und PDF-Seitengröße exakt überein.
+    if (format === 'A5') {
+      return sourceDataUrl;
+    }
+
+    return new Promise<string>((resolve, reject) => {
+      const image = new Image();
+
+      image.onload = () => {
+        const canvas = document.createElement('canvas');
+        canvas.width = targetWidth;
+        canvas.height = targetHeight;
+
+        const context = canvas.getContext('2d');
+
+        if (!context) {
+          reject(new Error('Canvas konnte nicht erstellt werden'));
+          return;
+        }
+
+        context.drawImage(image, 0, 0, targetWidth, targetHeight);
+        resolve(canvas.toDataURL('image/png'));
+      };
+
+      image.onerror = () => reject(new Error('Flyer-Bild konnte nicht skaliert werden'));
+      image.src = sourceDataUrl;
+    });
+  };
+
+  // --------------------------------------------------
   // DOWNLOAD PNG
   // --------------------------------------------------
 
@@ -151,47 +227,32 @@ export function FlyerExport() {
   };
 
   // --------------------------------------------------
-  // A4 PNG EXPORT
+  // FLYER PNG / PDF EXPORT (A4 / A5)
   // --------------------------------------------------
 
-  const downloadA4Png = async () => {
+  const downloadFlyerPng = async (format: 'A4' | 'A5') => {
     await runExport(async () => {
-      if (!a4Ref.current) {
-        throw new Error('A4-Element nicht gefunden');
+      if (!flyerRef.current) {
+        throw new Error('Flyer-Element nicht gefunden');
       }
 
-      const dataUrl = await createPng(a4Ref.current, {
-        width: A4_WIDTH,
-        height: A4_HEIGHT,
-        pixelRatio: 1,
-        backgroundColor: BACKGROUND_LIGHT,
-      });
-
-      savePng(dataUrl, 'Joris-van-Bohemen-Flyer-A4.png');
-    }, 'Der A4-PNG-Export ist fehlgeschlagen.');
+      const dataUrl = await createFlyerPng(flyerRef.current, format);
+      savePng(dataUrl, `Joris-van-Bohemen-Flyer-${format}.png`);
+    }, `Der ${format}-PNG-Export ist fehlgeschlagen.`);
   };
 
-  // --------------------------------------------------
-  // A4 PDF EXPORT
-  // --------------------------------------------------
-
-  const downloadA4Pdf = async () => {
+  const downloadFlyerPdf = async (format: 'A4' | 'A5') => {
     await runExport(async () => {
-      if (!a4Ref.current) {
-        throw new Error('A4-Element nicht gefunden');
+      if (!flyerRef.current) {
+        throw new Error('Flyer-Element nicht gefunden');
       }
 
-      const imageData = await createPng(a4Ref.current, {
-        width: A4_WIDTH,
-        height: A4_HEIGHT,
-        pixelRatio: 1,
-        backgroundColor: BACKGROUND_LIGHT,
-      });
+      const imageData = await createFlyerPng(flyerRef.current, format);
 
       const pdf = new jsPDF({
         orientation: 'portrait',
         unit: 'mm',
-        format: 'a4',
+        format: format.toLowerCase() as 'a4' | 'a5',
         compress: true,
       });
 
@@ -207,8 +268,8 @@ export function FlyerExport() {
         pageHeight,
       );
 
-      pdf.save('Joris-van-Bohemen-Flyer-A4.pdf');
-    }, 'Der A4-PDF-Export ist fehlgeschlagen.');
+      pdf.save(`Joris-van-Bohemen-Flyer-${format}.pdf`);
+    }, `Der ${format}-PDF-Export ist fehlgeschlagen.`);
   };
 
   // --------------------------------------------------
@@ -476,15 +537,15 @@ export function FlyerExport() {
         </h1>
 
         <p className="mt-2 text-[#3D3229]/60">
-          A4, Story und Mobile-Version als PNG exportieren.
-          Zusätzlich stehen PDF-Exporte für den A4-Flyer
-          und die Visitenkarte zur Verfügung.
+          Den Flyer als A4 oder A5 exportieren. Zusätzlich
+          stehen Story- und Mobile-Versionen sowie der
+          Visitenkarten-PDF-Export zur Verfügung.
         </p>
 
         <div className="mt-6 flex flex-wrap gap-3">
 
           <button
-            onClick={downloadA4Png}
+            onClick={() => downloadFlyerPng('A4')}
             disabled={exporting}
             className="rounded-xl bg-[#3D3229] px-5 py-3 text-white transition-colors hover:bg-[#B5725A] disabled:opacity-50"
           >
@@ -492,11 +553,27 @@ export function FlyerExport() {
           </button>
 
           <button
-            onClick={downloadA4Pdf}
+            onClick={() => downloadFlyerPdf('A4')}
             disabled={exporting}
             className="rounded-xl bg-[#3D3229] px-5 py-3 text-white transition-colors hover:bg-[#B5725A] disabled:opacity-50"
           >
             A4 PDF
+          </button>
+
+          <button
+            onClick={() => downloadFlyerPng('A5')}
+            disabled={exporting}
+            className="rounded-xl bg-[#3D3229] px-5 py-3 text-white transition-colors hover:bg-[#B5725A] disabled:opacity-50"
+          >
+            A5 PNG
+          </button>
+
+          <button
+            onClick={() => downloadFlyerPdf('A5')}
+            disabled={exporting}
+            className="rounded-xl bg-[#3D3229] px-5 py-3 text-white transition-colors hover:bg-[#B5725A] disabled:opacity-50"
+          >
+            A5 PDF
           </button>
 
           <button
@@ -528,27 +605,31 @@ export function FlyerExport() {
         )}
       </div>
 
-      {/* A4 PREVIEW */}
+      {/* FLYER PREVIEW (A5 MASTER) */}
 
       <section className="mb-24 overflow-auto">
         <p className="mx-auto mb-4 max-w-[900px] text-sm text-[#3D3229]/50">
-          A4 · 2480 × 3508 px · 300 DPI
+          Vorschau des A5-Masterlayouts · 1748 × 2480 px · 300 DPI.
+          Der A4-Export wird proportional hochskaliert.
         </p>
 
         <div
-          ref={a4Ref}
+          ref={flyerRef}
           className="mx-auto"
           style={{
-            width: `${A4_WIDTH}px`,
-            height: `${A4_HEIGHT}px`,
-            minWidth: `${A4_WIDTH}px`,
-            minHeight: `${A4_HEIGHT}px`,
+            width: `${A5_WIDTH}px`,
+            height: `${A5_HEIGHT}px`,
+            minWidth: `${A5_WIDTH}px`,
+            minHeight: `${A5_HEIGHT}px`,
             flexShrink: 0,
-            display: 'block',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
             boxSizing: 'border-box',
+            overflow: 'hidden',
           }}
         >
-          <FlyerA4 />
+          <FlyerA5 />
         </div>
       </section>
 
